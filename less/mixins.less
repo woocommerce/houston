@@ -51,6 +51,33 @@
 	margin-left:7px;
 }
 
+.lifted() {
+	position: relative;
+	&:before, &:after {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		-ms-transform: skew(-3deg,-2deg);
+		-webkit-transform: skew(-3deg,-2deg); /* Safari and Chrome */
+		-o-transform: skew(-3deg,-2deg); /* Opera */
+		-moz-transform: skew(-3deg,-2deg); /* Firefox */
+		bottom: 13px;
+		.box_shadow(0,15px,5px,0,rgba(0,0,0,0.2));
+		height: 50px;
+		left: 3px;
+		max-width: 50%;
+		width: 51%;
+	}
+	&:after {
+		-ms-transform: skew(3deg,2deg); /* IE 9 */
+		-webkit-transform: skew(3deg,2deg); /* Safari and Chrome */
+		-o-transform: skew(3deg,2deg); /* Opera */
+		-moz-transform: skew(3deg,2deg); /* Firefox */
+		left: auto;
+		right: 3px;
+	}
+}
+
 .clearfix() {
 	*zoom:1;
 

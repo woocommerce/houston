@@ -1116,6 +1116,54 @@ img.avatar {
   width: 100%;
   text-align: center;
 }
+#postbox .postbox-sidebar .widget_text {
+  padding: 1.618em;
+  border-top: 2.618em solid #ede7c5;
+  background-color: #f3efd8;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  color: #817d65;
+}
+#postbox .postbox-sidebar .widget_text:before,
+#postbox .postbox-sidebar .widget_text:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -ms-transform: skew(-3deg, -2deg);
+  -webkit-transform: skew(-3deg, -2deg);
+  /* Safari and Chrome */
+
+  -o-transform: skew(-3deg, -2deg);
+  /* Opera */
+
+  -moz-transform: skew(-3deg, -2deg);
+  /* Firefox */
+
+  bottom: 13px;
+  -webkit-box-shadow: 0 15px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 5px 0 rgba(0, 0, 0, 0.2);
+  height: 50px;
+  left: 3px;
+  max-width: 50%;
+  width: 51%;
+}
+#postbox .postbox-sidebar .widget_text:after {
+  -ms-transform: skew(3deg, 2deg);
+  /* IE 9 */
+
+  -webkit-transform: skew(3deg, 2deg);
+  /* Safari and Chrome */
+
+  -o-transform: skew(3deg, 2deg);
+  /* Opera */
+
+  -moz-transform: skew(3deg, 2deg);
+  /* Firefox */
+
+  left: auto;
+  right: 3px;
+}
 h2 .controls {
   font-size: .618em;
   float: right;
