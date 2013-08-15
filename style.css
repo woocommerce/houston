@@ -1225,6 +1225,11 @@ h2 .controls a#togglecomments:before {
   padding: 1em 0;
   margin: 0;
 }
+.site-navigation .widget_search #s:active,
+.site-navigation .widget_search #s:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .site-navigation .widget_search #searchsubmit:hover {
   background-color: #8dc05d;
   color: #fff;
@@ -1298,7 +1303,7 @@ h2 .controls a#togglecomments:before {
   margin-bottom: 1.618em;
   padding: 1.618em;
   padding-bottom: 0;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   border: 1px solid #dddddd;
   border-width: 1px 0;
   overflow: hidden;
