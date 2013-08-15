@@ -9,6 +9,8 @@ jQuery(document).ready(function(){
         jQuery( '#header ul.menu' ).slideToggle();
     });
 
+    jQuery( 'body' ).fitVids();
+
 });
 jQuery(window).resize(function(){
 

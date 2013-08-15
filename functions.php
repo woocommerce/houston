@@ -68,4 +68,5 @@ add_filter( 'wp_nav_menu_items', 'new_nav_menu_items' );
 add_action( 'wp_enqueue_scripts', 'woo_p2_scripts' );
 function woo_p2_scripts() {
 	wp_enqueue_script( 'woo-p2-script', get_stylesheet_directory_uri() . '/js/script.min.js', array( 'jquery' ), '', true );
+	wp_enqueue_script( 'fitvids', get_stylesheet_directory_uri() . '/js/fitvids.js', array( 'jquery' ), '', true );
 }
