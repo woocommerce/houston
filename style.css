@@ -919,12 +919,12 @@ button:hover {
  * Style
  */
 a {
-  color: #ee552f;
+  color: #42a2ce;
   font-weight: 700;
   text-decoration: none;
 }
 a:hover {
-  color: #cc330d;
+  color: #2080ac;
 }
 .progress {
   display: none;
@@ -1180,7 +1180,7 @@ h2 .controls a {
   color: #9fa6a6;
 }
 h2 .controls a:hover {
-  color: #ee552f;
+  color: #42a2ce;
 }
 h2 .controls a#directions-keyboard,
 h2 .controls a#togglecomments {
