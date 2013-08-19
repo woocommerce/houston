@@ -6,6 +6,7 @@
 * No longer enqueueing default p2 iphone css and scripts
 * Fixed comment edit buttons
 * Only add the search bar to the primary custom menu
+* Fixed search bar appearance when used in sidebar
 
 ### Version 1.0.0
 * Initial Realease!

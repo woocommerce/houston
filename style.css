@@ -1779,6 +1779,14 @@ h2 .controls a#togglecomments:before {
 .searchform label {
   display: none;
 }
+#sidebar .searchform #s {
+  width: 55%;
+}
+#sidebar .searchform #searchsubmit {
+  width: 45%;
+  padding-top: .53em;
+  padding-bottom: .53em;
+}
 #respond {
   padding: 1.618em 1.618em 1.618em 54px;
   position: relative;
