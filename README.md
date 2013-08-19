@@ -8,6 +8,7 @@
 * Only add the search bar to the primary custom menu
 * Fixed search bar appearance when used in sidebar
 * Tweak content layout breakpoint
+* Postbox is fixed when scrolling
 
 ### Version 1.0.0
 * Initial Realease!

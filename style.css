@@ -1007,6 +1007,9 @@ img.avatar {
   margin-left: -1.618em;
   margin-right: -1.618em;
 }
+#postbox .inputarea {
+  z-index: 999999;
+}
 #postbox #new_post {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
@@ -1032,7 +1035,7 @@ img.avatar {
   -webkit-appearance: none;
   margin: 0;
   color: #6c7373;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #fcfcfc;
 }
 #postbox #new_post textarea:active,
 #postbox #new_post input#tags:active,

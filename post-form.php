@@ -29,6 +29,7 @@
 <?php $post_format = isset( $_GET['p'] ) ? $_GET['p'] : 'status'; ?>
 <div id="postbox">
 
+	<div class="postboxcontent">
 
 		<div class="avatar">
 			<?php echo get_avatar( get_current_user_id(), 240 ); ?>
@@ -69,5 +70,7 @@
 		<div class="postbox-sidebar">
 			<?php dynamic_sidebar( 'beneath-post-box' ); ?>
 		</div>
+
+	</div><!--/.postboxcontent -->
 
 </div> <!-- // postbox -->

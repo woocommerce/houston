@@ -368,6 +368,9 @@ img.avatar {
 	margin-bottom:2.618em;
 	margin-left:-1.618em;
 	margin-right:-1.618em;
+	.inputarea {
+		z-index: 999999;
+	}
 	#new_post {
 		.borderbox;
 		textarea, input#tags {
@@ -381,7 +384,7 @@ img.avatar {
 			-webkit-appearance:none;
 			margin:0;
 			color:@color_body + #222;
-			background-color: rgba(255,255,255,0.5);
+			background-color: darken(@bg_light, 1%);
 			&:active, &:focus {
 				background-color: #fff;
 				color: @color_body;
