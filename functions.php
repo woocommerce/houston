@@ -63,12 +63,14 @@ function woo_p2_likes_comment_reply_link( $link, $args, $comment, $post ) {
 /**
  * Add the search widget to the nav
  */
-function new_nav_menu_items( $items ) {
-	$homelink 	= the_widget( 'WP_Widget_Search' );
-	$items 		= $items . $homelink;
+function new_nav_menu_items( $items, $args ) {
+	if ( $args->theme_location == 'primary' ) {
+		$homelink 	= the_widget( 'WP_Widget_Search' );
+		$items 		= $items . $homelink;
+	}
 	return $items;
 }
-add_filter( 'wp_nav_menu_items', 'new_nav_menu_items' );
+add_filter( 'wp_nav_menu_items', 'new_nav_menu_items', 10, 2 );
 
 
 /**
