@@ -1397,10 +1397,16 @@ h2 .controls a#togglecomments:before {
 #postlist .postcontent input.tags {
   margin-bottom: 1em;
 }
-#postlist .postcontent .buttons button:nth-child(2n) {
+#postlist .buttons textarea,
+#postlist form.textedit textarea {
+  margin-bottom: 1em;
+}
+#postlist .buttons button:nth-child(2n),
+#postlist form.textedit button:nth-child(2n) {
   margin-right: .618em;
 }
-#postlist .postcontent .buttons button:nth-child(2n):before {
+#postlist .buttons button:nth-child(2n):before,
+#postlist form.textedit button:nth-child(2n):before {
   font-family: 'FontAwesome';
   speak: none;
   font-weight: normal;
@@ -1411,10 +1417,12 @@ h2 .controls a#togglecomments:before {
   margin-right: 7px;
   content: "\f05d";
 }
-#postlist .postcontent .buttons button:nth-child(3n) {
+#postlist .buttons button:nth-child(3n),
+#postlist form.textedit button:nth-child(3n) {
   background-color: #4a5151;
 }
-#postlist .postcontent .buttons button:nth-child(3n):before {
+#postlist .buttons button:nth-child(3n):before,
+#postlist form.textedit button:nth-child(3n):before {
   font-family: 'FontAwesome';
   speak: none;
   font-weight: normal;
@@ -1425,10 +1433,12 @@ h2 .controls a#togglecomments:before {
   margin-right: 7px;
   content: "\f05c";
 }
-#postlist .postcontent .buttons button:nth-child(3n):hover {
+#postlist .buttons button:nth-child(3n):hover,
+#postlist form.textedit button:nth-child(3n):hover {
   background-color: #394040;
 }
-#postlist .postcontent .buttons button:nth-child(3n):hover:before {
+#postlist .buttons button:nth-child(3n):hover:before,
+#postlist form.textedit button:nth-child(3n):hover:before {
   background-color: none;
 }
 #postlist .post ul.inlinecomments {

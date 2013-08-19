@@ -624,26 +624,29 @@ h2 .controls {
 		textarea, input.tags {
 			margin-bottom:1em;
 		}
-		.buttons {
-			button:nth-child(2n) {
-				margin-right:.618em;
-				&:before {
-					.iconbefore;
-					content: "\f05d";
-				}
+	}
+	.buttons, form.textedit {
+		textarea {
+			margin-bottom:1em;
+		}
+		button:nth-child(2n) {
+			margin-right:.618em;
+			&:before {
+				.iconbefore;
+				content: "\f05d";
 			}
-			button:nth-child(3n) {
-				background-color: @color_body;
-				&:before {
-					.iconbefore;
-					content: "\f05c";
-				}
-				&:hover {
-					background-color: @color_body - #111;
-				}
-				&:hover:before {
-					background-color: none;
-				}
+		}
+		button:nth-child(3n) {
+			background-color: @color_body;
+			&:before {
+				.iconbefore;
+				content: "\f05c";
+			}
+			&:hover {
+				background-color: @color_body - #111;
+			}
+			&:hover:before {
+				background-color: none;
 			}
 		}
 	}

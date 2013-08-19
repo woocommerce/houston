@@ -1,5 +1,14 @@
 # Woo p2 theme
 
+## Changelog
+
+### Version 1.0.1
+* No longer enqueueing default p2 iphone css and scripts
+* Fixed comment edit buttons
+
+### Version 1.0.0
+* Initial Realease!
+
 ## Modified Templates
 * header.php - Removed `get_sidebar()`. Added `.header-inner`.
 * footer.php - Added `get_sidebar()`.
