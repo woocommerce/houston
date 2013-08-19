@@ -82,3 +82,15 @@ function woo_p2_scripts() {
 	wp_enqueue_script( 'fitvids', get_stylesheet_directory_uri() . '/js/fitvids.js', array( 'jquery' ), '', true );
 	wp_dequeue_script( 'iphone' );
 }
+
+
+/**
+ * Add viewport meta
+ */
+add_action( 'wp_head', 'woo_p2_viewport_meta' );
+function woo_p2_viewport_meta() {
+?>
+	<!--  Mobile viewport scale | Disable user zooming as the layout is optimised -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<?php
+}
