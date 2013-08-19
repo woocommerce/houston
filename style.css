@@ -2144,7 +2144,7 @@ h2 .controls a#togglecomments:before {
     *margin-right: 1.9284002273813892%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   #postbox {
     width: 100%;
     margin: 0;
