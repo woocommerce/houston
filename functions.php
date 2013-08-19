@@ -15,10 +15,19 @@ register_sidebar( array(
 
 
 /**
+ * Tweak p2
+ */
+add_action( 'init', 'woo_p2_custom' );
+function woo_p2_custom() {
+	remove_action( 'wp_enqueue_scripts', 'p2_iphone_style', 1000 );
+}
+
+
+/**
  * Tweak p2 likes
  */
-add_action( 'init', 'p2_likes_custom' );
-function p2_likes_custom() {
+add_action( 'init', 'woo_p2_likes_custom' );
+function woo_p2_likes_custom() {
 	// Removes the 'like' button from posts and comments
 	remove_action( 'p2_action_links', 'p2_likes_action_links' );
 	remove_filter( 'comment_reply_link', 'p2_likes_comment_reply_link', 99, 4 );
@@ -65,8 +74,9 @@ add_filter( 'wp_nav_menu_items', 'new_nav_menu_items' );
 /**
  * Add js to the frontend
  */
-add_action( 'wp_enqueue_scripts', 'woo_p2_scripts' );
+add_action( 'wp_enqueue_scripts', 'woo_p2_scripts', 999 );
 function woo_p2_scripts() {
 	wp_enqueue_script( 'woo-p2-script', get_stylesheet_directory_uri() . '/js/script.min.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'fitvids', get_stylesheet_directory_uri() . '/js/fitvids.js', array( 'jquery' ), '', true );
+	wp_dequeue_script( 'iphone' );
 }
