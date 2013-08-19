@@ -2,7 +2,7 @@
 
 ## Changelog
 
-### Version 1.0.1
+### Version 1.0.1 - 2013.08.19
 * No longer enqueueing default p2 iphone css and scripts
 * Fixed comment edit buttons
 * Only add the search bar to the primary custom menu
