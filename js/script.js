@@ -12,13 +12,13 @@ jQuery(document).ready(function(){
     jQuery( 'body' ).fitVids();
 
     // Fix the post box when scrolling
-    var breakpoint = 1200;
+    var breakpoint  = 1200;
+    var bh          = $('body').height();
+    var wh          = $(window).height();
+    var pbh         = $('#postbox .postboxcontent').height();
+    var pos         = $('#postbox .postboxcontent').position();
 
-    if (jQuery(window).width() > breakpoint) {
-        var bh = $('body').height();
-        var wh= $(window).height();
-        var pbh = $('#postbox .postboxcontent').height();
-        var pos = $('#postbox .postboxcontent').position();
+    if (jQuery(window).width() > breakpoint && wh > pbh ) {
 
         $(window).scroll(function() {
 
@@ -32,9 +32,6 @@ jQuery(document).ready(function(){
                 } else {
                     $('#postbox .postboxcontent').removeAttr('style').removeClass('fixed');
                 }
-                if ( pbh > wh ) {
-                    $('#postbox .postboxcontent').height(pbh - wh).css('overflow','scroll');
-                }
             } else {
                $('#postbox .postboxcontent').removeAttr('style').removeClass('fixed');
             }
@@ -47,12 +44,6 @@ jQuery(document).ready(function(){
                 $('#postbox .postboxcontent').css('width',$('#postbox').width());
             }
         });
-
-        // Set the postbox height and add overflow scroll is necessary
-        $('#postbox').height(pbh);
-        if ( pbh > wh ) {
-            $('#postbox .postboxcontent').height(pbh - wh).css('overflow','scroll');
-        }
     }
 
     // Post submit button scrolls to top
