@@ -1314,6 +1314,7 @@ h2 .controls a#togglecomments:before {
   height: 100%;
   width: 1px;
   background-color: #e5e5e5;
+  z-index: -2;
 }
 #postlist li.post,
 #postlist li.comment {
@@ -1342,9 +1343,7 @@ h2 .controls a#togglecomments:before {
 }
 #postlist li.newupdates,
 #postlist li.newcomment {
-  position: relative;
-  -webkit-box-shadow: inset -0.327em 0 0 0 #8dc05d;
-  box-shadow: inset -0.327em 0 0 0 #8dc05d;
+  background-color: #F6F3D1;
 }
 #postlist ul {
   padding: 0;
@@ -1354,10 +1353,21 @@ h2 .controls a#togglecomments:before {
   margin-bottom: 1.618em;
   padding: 1.618em;
   padding-bottom: 0;
-  background-color: #ffffff !important;
   border: 1px solid #dddddd;
   border-width: 1px 0;
   overflow: hidden;
+  position: relative;
+}
+#postlist > li.post:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: -1;
 }
 #postlist > li.post:first-child {
   border-top-width: 0;

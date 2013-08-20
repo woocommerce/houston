@@ -562,6 +562,7 @@ h2 .controls {
 		height: 100%;
 		width:1px;
 		background-color: @bg_light - #1a1a1a;
+		z-index: -2;
 	}
 	li.post, li.comment {
 		margin:0;
@@ -584,8 +585,7 @@ h2 .controls {
 		}
 	}
 	li.newupdates, li.newcomment {
-		position: relative;
-		.inset_box_shadow(-.327em,0,0,0,@green);
+		background-color: #F6F3D1;
 	}
 	ul {
 		padding:0;
@@ -595,10 +595,21 @@ h2 .controls {
 		margin-bottom:1.618em;
 		padding:1.618em;
 		padding-bottom:0;
-		background-color: @bg_light !important;
 		border:1px solid @bg_light - #222;
 		border-width:1px 0;
 		overflow: hidden;
+		position: relative;
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			background-color: #fff;
+			z-index: -1;
+		}
 		&:first-child {
 			border-top-width:0;
 			.border_radius_top(0);
