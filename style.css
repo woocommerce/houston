@@ -2132,7 +2132,8 @@ h2 .controls a#togglecomments:before {
     border-top-right-radius: 0.327em;
     margin: 0;
   }
-  .single #main {
+  .single #main,
+  .archive #main {
     display: inline;
     float: left;
     width: 62.705699545237216%;
@@ -2141,6 +2142,7 @@ h2 .controls a#togglecomments:before {
     *width: 62.65361621190388%;
     *margin-left: 1.9284002273813892%;
     *margin-right: 1.9284002273813892%;
+    margin-left: 18.64715022738139%;
   }
   #respond {
     padding: 1.618em;
@@ -2164,8 +2166,8 @@ h2 .controls a#togglecomments:before {
     display: block;
   }
   #main {
-    width: 100%;
-    margin: 0;
+    width: 100% !important;
+    margin: 0 !important;
     display: block;
   }
   .sleeve_main {
