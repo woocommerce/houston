@@ -13,38 +13,40 @@ jQuery(document).ready(function(){
 
     // Fix the post box when scrolling
     var breakpoint  = 1200;
-    var bh          = $('body').height();
+    var bh          = $( 'body' ).height();
     var wh          = $(window).height();
-    var pbh         = $('#postbox .postboxcontent').height();
-    var pos         = $('#postbox .postboxcontent').position();
+    var pbh         = $( '#postbox .postboxcontent' ).height();
+    var pbw         = $( '#postbox' ).width();
+    var pos         = $( '#postbox .postboxcontent' ).position();
 
-    if (jQuery(window).width() > breakpoint && wh > pbh ) {
+    $(window).scroll(function() {
+        // Only fix it in position if the window is wider than the layout breakpoint and the window height is taller than the postbox
+        if ( jQuery( window ).width() > breakpoint && wh > pbh ) {
 
-        $(window).scroll(function() {
+            var offset  = 0;
+            var sticky  = false;
+            var top     = $(window).scrollTop();
+            var pbw     = $( '#postbox' ).width();
 
-            var c = $(document).scrollTop();
-            var b = $(window).height();
-            var w = $(document).width();
-
-            if (jQuery(window).width() > breakpoint) {
-                if (c > -120+pos.top){
-                    $('#postbox .postboxcontent').css('position','fixed').css('width',$('#postbox').width()).addClass('fixed');
-                } else {
-                    $('#postbox .postboxcontent').removeAttr('style').removeClass('fixed');
-                }
+            if ( $( '#wrapper' ).offset().top < top + 120 ) {
+                $( '#postbox .postboxcontent' ).addClass( 'fixed' );
+                sticky = true;
             } else {
-               $('#postbox .postboxcontent').removeAttr('style').removeClass('fixed');
+                $( '#postbox .postboxcontent' ).removeClass( 'fixed' );
             }
 
-        });
-        $(window).resize(function(){
-            if (jQuery(window).width() > breakpoint) {
-                $('#postbox .postboxcontent').removeAttr('style').removeClass('fixed');
-            } else {
-                $('#postbox .postboxcontent').css('width',$('#postbox').width());
-            }
-        });
-    }
+            $( '#postbox .postboxcontent' ).css( 'width', pbw );
+        }
+
+    });
+    $(window).resize(function(){
+        if ( jQuery( window ).width() > breakpoint ) {
+            var pbw       = $('#postbox').width();
+            $( '#postbox .postboxcontent' ).css( 'width', pbw );
+        } else {
+            $( '#postbox .postboxcontent' ).removeClass( 'fixed' ).removeAttr( 'style' );
+        }
+    });
 
     // Post submit button scrolls to top
     jQuery( '#postbox .inputarea textarea' ).click(function () {

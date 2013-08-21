@@ -10,6 +10,7 @@
 * Tweak content layout breakpoint
 * Postbox is fixed when scrolling
 * Add viewport meta
+* Javascript tidy up
 
 ### Version 1.0.0
 * Initial Realease!
