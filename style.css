@@ -1337,16 +1337,17 @@ h2 .controls a#togglecomments:before {
   padding: 0;
   margin: 0;
 }
-#postlist > li.post {
+#postlist > li.post,
+#postlist li.type-page {
   margin-bottom: 1.618em;
   padding: 1.618em;
   padding-bottom: 0;
   border: 1px solid #dddddd;
   border-width: 1px 0;
-  overflow: hidden;
   position: relative;
 }
-#postlist > li.post:before {
+#postlist > li.post:before,
+#postlist li.type-page:before {
   content: "";
   display: block;
   position: absolute;
@@ -1357,18 +1358,29 @@ h2 .controls a#togglecomments:before {
   background-color: #fff;
   z-index: -1;
 }
-#postlist > li.post:first-child {
+#postlist > li.post:first-child,
+#postlist li.type-page:first-child {
   border-top-width: 0;
   -webkit-border-top-left-radius: 0;
   -webkit-border-top-right-radius: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-#postlist > li.post:hover .meta .actions {
+#postlist > li.post:hover .meta .actions,
+#postlist li.type-page:hover .meta .actions {
   filter: alpha(opacity=@opacity * 100);
   -moz-opacity: 1;
   -khtml-opacity: 1;
   opacity: 1;
+}
+#postlist > li.type-page {
+  border-width: 1px;
+}
+#postlist > li.type-page > .postcontent {
+  margin-left: 0;
+}
+#postlist > li.type-page > h4 {
+  display: none;
 }
 #postlist .avatar {
   width: 32px;
@@ -1442,7 +1454,8 @@ h2 .controls a#togglecomments:before {
 #postlist form.textedit button:nth-child(3n):hover:before {
   background-color: none;
 }
-#postlist .post ul.inlinecomments {
+#postlist .post ul.inlinecomments,
+#postlist .type-page ul.inlinecomments {
   background-color: rgba(238, 238, 238, 0.15);
   margin-left: 0;
   -webkit-border-bottom-left-radius: 0.327em;
@@ -1454,22 +1467,31 @@ h2 .controls a#togglecomments:before {
   margin-right: -1.618em;
 }
 #postlist .post ul.inlinecomments .meta .actions,
+#postlist .type-page ul.inlinecomments .meta .actions,
 #postlist .post ul.inlinecomments .meta .p2-likes-post,
-#postlist .post ul.inlinecomments .meta a.p2-likes-link {
+#postlist .type-page ul.inlinecomments .meta .p2-likes-post,
+#postlist .post ul.inlinecomments .meta a.p2-likes-link,
+#postlist .type-page ul.inlinecomments .meta a.p2-likes-link {
   color: #fafafa;
 }
-#postlist .post ul.inlinecomments li {
+#postlist .post ul.inlinecomments li,
+#postlist .type-page ul.inlinecomments li {
   border: 0;
 }
-#postlist .post ul.inlinecomments ul.children {
+#postlist .post ul.inlinecomments ul.children,
+#postlist .type-page ul.inlinecomments ul.children {
   margin-left: 28px;
 }
-#postlist .post ul.inlinecomments .avatar {
+#postlist .post ul.inlinecomments .avatar,
+#postlist .type-page ul.inlinecomments .avatar {
   width: 16px;
 }
 #postlist .post ul.inlinecomments h4,
+#postlist .type-page ul.inlinecomments h4,
 #postlist .post ul.inlinecomments .postcontent,
-#postlist .post ul.inlinecomments .commentcontent {
+#postlist .type-page ul.inlinecomments .postcontent,
+#postlist .post ul.inlinecomments .commentcontent,
+#postlist .type-page ul.inlinecomments .commentcontent {
   margin-left: 28px;
   margin-right: 1.618em;
 }
@@ -1997,19 +2019,25 @@ h2 .controls a#togglecomments:before {
   #postlist .commentcontent {
     margin-left: 68px;
   }
-  #postlist .post ul.inlinecomments {
+  #postlist .post ul.inlinecomments,
+  #postlist .type-page ul.inlinecomments {
     padding-left: 91px;
   }
-  #postlist .post ul.inlinecomments ul.children {
+  #postlist .post ul.inlinecomments ul.children,
+  #postlist .type-page ul.inlinecomments ul.children {
     padding-left: 48px;
     margin: 0;
   }
-  #postlist .post ul.inlinecomments .avatar {
+  #postlist .post ul.inlinecomments .avatar,
+  #postlist .type-page ul.inlinecomments .avatar {
     width: 32px;
   }
   #postlist .post ul.inlinecomments h4,
+  #postlist .type-page ul.inlinecomments h4,
   #postlist .post ul.inlinecomments .postcontent,
-  #postlist .post ul.inlinecomments .commentcontent {
+  #postlist .type-page ul.inlinecomments .postcontent,
+  #postlist .post ul.inlinecomments .commentcontent,
+  #postlist .type-page ul.inlinecomments .commentcontent {
     margin-left: 48px;
   }
   #postlist li.post h4:first-of-type,
@@ -2124,7 +2152,8 @@ h2 .controls a#togglecomments:before {
     margin: 0;
   }
   .single #main,
-  .archive #main {
+  .archive #main,
+  .page #main {
     display: inline;
     float: left;
     width: 62.705699545237216%;
