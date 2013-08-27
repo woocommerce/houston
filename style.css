@@ -2209,6 +2209,100 @@ h2 .controls a#togglecomments:before {
     *margin-right: 1.9284002273813892%;
   }
 }
+/**
+ * Autocomplete
+ */
+.ui-menu {
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+
+  border-color: #dddddd !important;
+  padding: 0;
+  -webkit-border-radius: 0.327em;
+  border-radius: 0.327em;
+  border: 0 !important;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.ui-menu .ui-menu-item {
+  font-size: 1em !important;
+  *zoom: 1;
+  padding: .618em .618em .618em 1em !important;
+  width: 100% !important;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+
+  cursor: pointer;
+  font-weight: normal !important;
+  border: 0 !important;
+}
+.ui-menu .ui-menu-item:before,
+.ui-menu .ui-menu-item:after {
+  content: "";
+  display: table;
+}
+.ui-menu .ui-menu-item:after {
+  clear: both;
+}
+.ui-menu .ui-menu-item:first-child {
+  -webkit-border-top-left-radius: 0.327em;
+  -webkit-border-top-right-radius: 0.327em;
+  border-top-left-radius: 0.327em;
+  border-top-right-radius: 0.327em;
+}
+.ui-menu .ui-menu-item:last-child {
+  -webkit-border-bottom-left-radius: 0.327em;
+  -webkit-border-bottom-right-radius: 0.327em;
+  border-bottom-left-radius: 0.327em;
+  border-bottom-right-radius: 0.327em;
+}
+.ui-menu .ui-menu-item img {
+  float: right;
+  width: 21px;
+  height: auto;
+}
+.ui-menu .ui-menu-item a {
+  padding: 0 !important;
+  font-weight: normal !important;
+}
+.ui-menu .ui-menu-item:hover a strong {
+  color: #2080ac !important;
+}
+.ui-menu .ui-menu-item:nth-child(odd) {
+  background: #fafafa !important;
+}
+.ui-menu .ui-menu-item:hover {
+  background-color: #42a2ce !important;
+}
+.ui-menu .ui-menu-item:hover a,
+.ui-menu .ui-menu-item:hover a strong {
+  color: #ffffff !important;
+}
+.ui-menu .ui-menu-item a {
+  color: #4a5151 !important;
+}
+.ui-menu .ui-menu-item a strong {
+  color: #42a2ce !important;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-focus,
+.ui-menu .ui-menu-item a.ui-state-active {
+  border: 0 !important;
+  background: none !important;
+}
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   #postbox {
     width: 100%;

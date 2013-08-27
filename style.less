@@ -1205,6 +1205,76 @@ h2 .controls {
 	}
 }
 
+/**
+ * Autocomplete
+ */
+.ui-menu {
+	background: @bg_light;
+	.borderbox;
+	border-color:@bg_light - #222 !important;
+	padding:0;
+	.border_radius;
+	border: 0 !important;
+	.box_shadow(0,1px,3px,0,rgba(0,0,0,0.2));
+}
+
+.ui-menu .ui-menu-item {
+	font-size: 1em !important;
+	.clearfix;
+	padding:.618em .618em .618em 1em !important;
+	width:100% !important;
+	.borderbox;
+	cursor: pointer;
+	font-weight: normal !important;
+	border: 0 !important;
+	&:first-child {
+		.border_radius_top;
+	}
+	&:last-child {
+		.border_radius_bottom;
+	}
+	img {
+		float: right;
+		width:21px;
+		height: auto;
+	}
+	a {
+		padding:0 !important;
+		font-weight: normal !important;
+	}
+	&:hover {
+		a strong {
+			color: @color_links - #222 !important;
+		}
+	}
+}
+.ui-menu .ui-menu-item:nth-child(odd) {
+	background: darken(@bg_light,2%) !important;
+}
+
+.ui-menu .ui-menu-item {
+	&:hover {
+		background-color: @color_links !important;
+		a, a strong {
+			color: @bg_light !important;
+		}
+	}
+}
+
+.ui-menu .ui-menu-item a {
+	color: @color_body !important;
+	strong {
+		color: @color_links !important;
+	}
+}
+
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-focus,
+.ui-menu .ui-menu-item a.ui-state-active {
+	border: 0 !important;
+	background: none !important;
+}
+
 @media only screen and ( min-width: 768px ) and ( max-width: 1200px ) {
 	#postbox {
 		width:100%;
