@@ -610,6 +610,23 @@ h2 .controls {
 			}
 		}
 	}
+	li.post.sticky {
+		position: relative;
+		> .postcontent:after {
+			content: "\f08d";
+			font-family: "FontAwesome";
+			display: block;
+			position: absolute;
+			top:.236em;
+			left:1.387em;
+			color: #ce4d39;
+			height:1em;
+			width:1em;
+			font-size:1.618em;
+			line-height: 1;
+			.rotate(-45deg);
+		}
+	}
 	> li.type-page {
 		border-width:1px;
 		> .postcontent {

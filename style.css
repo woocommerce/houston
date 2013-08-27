@@ -1373,6 +1373,36 @@ h2 .controls a#togglecomments:before {
   -khtml-opacity: 1;
   opacity: 1;
 }
+#postlist li.post.sticky {
+  position: relative;
+}
+#postlist li.post.sticky > .postcontent:after {
+  content: "\f08d";
+  font-family: "FontAwesome";
+  display: block;
+  position: absolute;
+  top: .236em;
+  left: 1.387em;
+  color: #ce4d39;
+  height: 1em;
+  width: 1em;
+  font-size: 1.618em;
+  line-height: 1;
+  -webkit-transform: rotate(-45deg);
+  /* Saf3.1+, Chrome */
+
+  -moz-transform: rotate(-45deg);
+  /* FF3.5+ */
+
+  -ms-transform: rotate(-45deg);
+  /* IE9 */
+
+  -o-transform: rotate(-45deg);
+  /* Opera 10.5 */
+
+  transform: rotate(-45deg);
+  zoom: 1;
+}
 #postlist > li.type-page {
   border-width: 1px;
 }
