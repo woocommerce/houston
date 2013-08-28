@@ -43,24 +43,25 @@
 					<?php p2_user_prompt(); ?>
 				</label>
 				<?php endif; ?>
+				<div class="inputs">
+					<textarea class="expand70-200" name="posttext" id="posttext" rows="4" cols="60"></textarea>
 
-				<textarea class="expand70-200" name="posttext" id="posttext" rows="4" cols="60"></textarea>
+					<label class="post-error" for="posttext" id="posttext_error"></label>
+					<div class="postrow">
+						<input id="tags" name="tags" type="text" autocomplete="off"
+							value="<?php esc_attr_e( 'Tag it', 'p2' ); ?>"
+							onfocus="this.value=(this.value=='<?php echo esc_js( __( 'Tag it', 'p2' ) ); ?>') ? '' : this.value;"
+							onblur="this.value=(this.value=='') ? '<?php echo esc_js( __( 'Tag it', 'p2' ) ); ?>' : this.value;" />
+						<input id="submit" type="submit" value="<?php esc_attr_e( 'Post it', 'p2' ); ?>" />
+					</div>
+					<input type="hidden" name="post_format" id="post_format" value="<?php echo esc_attr( $post_format ); ?>" />
+					<span class="progress spinner-post-new" id="ajaxActivity"></span>
 
-				<label class="post-error" for="posttext" id="posttext_error"></label>
-				<div class="postrow">
-					<input id="tags" name="tags" type="text" autocomplete="off"
-						value="<?php esc_attr_e( 'Tag it', 'p2' ); ?>"
-						onfocus="this.value=(this.value=='<?php echo esc_js( __( 'Tag it', 'p2' ) ); ?>') ? '' : this.value;"
-						onblur="this.value=(this.value=='') ? '<?php echo esc_js( __( 'Tag it', 'p2' ) ); ?>' : this.value;" />
-					<input id="submit" type="submit" value="<?php esc_attr_e( 'Post it', 'p2' ); ?>" />
+					<?php do_action( 'p2_post_form' ); ?>
+
+					<input type="hidden" name="action" value="post" />
+					<?php wp_nonce_field( 'new-post' ); ?>
 				</div>
-				<input type="hidden" name="post_format" id="post_format" value="<?php echo esc_attr( $post_format ); ?>" />
-				<span class="progress spinner-post-new" id="ajaxActivity"></span>
-
-				<?php do_action( 'p2_post_form' ); ?>
-
-				<input type="hidden" name="action" value="post" />
-				<?php wp_nonce_field( 'new-post' ); ?>
 			</form>
 
 		</div>

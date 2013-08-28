@@ -1049,10 +1049,8 @@ img.avatar {
   display: none;
 }
 #postbox #post-prompt {
-  background-color: #ffffff;
   border: 1px solid #dddddd;
   border-width: 1px 0;
-  border-bottom: 0;
   padding-bottom: .618em;
   color: #191c1c;
   margin: 0 0 .618em;
@@ -1063,9 +1061,60 @@ img.avatar {
   padding-right: 1.618rem;
   padding-top: 1rem;
   margin-bottom: 0;
+  cursor: pointer;
+  -webkit-transition: all ease 0.4s;
+  -moz-transition: all ease 0.4s;
+  -o-transition: all ease 0.4s;
+  transition: all ease 0.4s;
 }
 #postbox #post-prompt a {
   text-decoration: none;
+}
+#postbox #post-prompt:before {
+  font-family: 'FontAwesome';
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 7px;
+  content: "\f116";
+  color: #d2d9d9;
+  -webkit-transition: all ease 0.4s;
+  -moz-transition: all ease 0.4s;
+  -o-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+#postbox #post-prompt:hover {
+  background-color: #ffffff;
+}
+#postbox #post-prompt:hover:before {
+  color: #4a5151;
+  -webkit-transform: rotate(90deg);
+  /* Saf3.1+, Chrome */
+
+  -moz-transform: rotate(90deg);
+  /* FF3.5+ */
+
+  -ms-transform: rotate(90deg);
+  /* IE9 */
+
+  -o-transform: rotate(90deg);
+  /* Opera 10.5 */
+
+  transform: rotate(90deg);
+  zoom: 1;
+}
+#postbox #post-prompt.active {
+  background-color: #ffffff;
+  border-width: 1px 0 0 0;
+}
+#postbox #post-prompt.active:before {
+  content: "\f117";
+}
+#postbox .inputs {
+  display: none;
 }
 #postbox #posttext {
   clear: both;
@@ -2160,10 +2209,15 @@ h2 .controls a#togglecomments:before {
   }
   #postbox #post-prompt {
     border-width: 1px;
-    -webkit-border-top-left-radius: 0.327em;
-    -webkit-border-top-right-radius: 0.327em;
-    border-top-left-radius: 0.327em;
-    border-top-right-radius: 0.327em;
+    -webkit-border-radius: 0.327em;
+    border-radius: 0.327em;
+  }
+  #postbox #post-prompt.active {
+    border-width: 1px 1px 0 1px;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
   #main {
     display: inline;

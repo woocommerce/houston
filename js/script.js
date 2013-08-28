@@ -48,11 +48,19 @@ jQuery(document).ready(function(){
         }
     });
 
-    // Post submit button scrolls to top
-    jQuery( '#postbox .inputarea textarea' ).click(function () {
+    // Also scroll to top when postbox textarea is focused
+    jQuery( '#postbox .inputarea textarea' ).focus(function () {
         jQuery( 'body,html' ).animate({
             scrollTop: 0
         }, 800);
+        return false;
+    });
+
+    // Hide the tag / submit inputs until the postbox label is clicked
+    jQuery( '#postbox .inputs' ).hide();
+    jQuery( '#post-prompt' ).click(function () {
+        jQuery(this).toggleClass( 'active' );
+        jQuery( '#postbox .inputs' ).slideToggle( 400 );
         return false;
     });
 

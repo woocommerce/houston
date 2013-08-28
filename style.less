@@ -396,16 +396,39 @@ img.avatar {
 		display: none;
 	}
 	#post-prompt {
-		background-color: @bg_light;
 		border:1px solid @bg_light - #222;
 		border-width:1px 0;
-		border-bottom:0;
 		padding-bottom:.618em;
 		.beta;
 		padding-left:1.618rem;
 		padding-right:1.618rem;
 		padding-top:1rem;
 		margin-bottom:0;
+		cursor: pointer;
+		.transition(all,ease,.4s);
+		&:before {
+			.iconbefore;
+			content: "\f116";
+			color: @color_body + #888;
+			.transition(all,ease,.4s);
+		}
+		&:hover {
+			background-color: @bg_light;
+			&:before {
+				color: @color_body;
+				.rotate(90deg);
+			}
+		}
+		&.active {
+			background-color: @bg_light;
+			border-width:1px 0 0 0;
+			&:before {
+				content: "\f117";
+			}
+		}
+	}
+	.inputs {
+		display: none;
 	}
 	#posttext {
 		clear:both;
@@ -1178,7 +1201,11 @@ h2 .controls {
 		}
 		#post-prompt {
 			border-width:1px;
-			.border_radius_top;
+			.border_radius;
+			&.active {
+				border-width:1px 1px 0 1px;
+				.border_radius_bottom(0);
+			}
 		}
 	}
 	#main {

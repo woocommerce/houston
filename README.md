@@ -11,6 +11,7 @@
 * Postbox is fixed when scrolling
 * Add viewport meta
 * Javascript tidy up
+* Made post box collapsable
 
 ### Version 1.0.0
 * Initial Realease!
@@ -18,5 +19,5 @@
 ## Modified Templates
 * header.php - Removed `get_sidebar()`. Added `.header-inner`.
 * footer.php - Added `get_sidebar()`.
-* post-form.php - Removed post types. Removed citation input. Removed post title input. Changed gravatar size (retina love). Removed media buttons. Added 'beneath-post-box' sidebar.
+* post-form.php - Removed post types. Removed citation input. Removed post title input. Changed gravatar size (retina love). Removed media buttons. Added 'beneath-post-box' sidebar. Added `.inputs` wrapping div.
 * sidebar.php - Just call the sidebar...
