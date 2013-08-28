@@ -1515,6 +1515,8 @@ h2 .controls a#togglecomments:before {
 #postlist .post ul.inlinecomments .avatar,
 #postlist .type-page ul.inlinecomments .avatar {
   width: 16px;
+  -webkit-box-shadow: 0 0 0 0.236em #ffffff;
+  box-shadow: 0 0 0 0.236em #ffffff;
 }
 #postlist .post ul.inlinecomments h4,
 #postlist .type-page ul.inlinecomments h4,
