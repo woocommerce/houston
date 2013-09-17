@@ -61,6 +61,7 @@ jQuery(document).ready(function(){
     jQuery( '#post-prompt' ).click(function () {
         jQuery(this).toggleClass( 'active' );
         jQuery( '#postbox .inputs' ).slideToggle( 400 );
+        jQuery( '#posttext' ).focus();
         return false;
     });
 
