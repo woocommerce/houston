@@ -3,7 +3,7 @@
  * Add a new sidebar beneath the post box.
  */
 register_sidebar( array(
-	'name'          => __( 'Beneath Post Box', 'pwoo' ),
+	'name'          => __( 'Beneath Post Box', 'Houston' ),
 	'id'            => 'beneath-post-box',
 	'description'   => '',
     'class'         => '',
