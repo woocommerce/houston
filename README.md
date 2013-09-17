@@ -1,6 +1,12 @@
-# Woo p2 theme
+# Houston
+Houston is a child theme for [p2](http://p2theme.com/), designed by the folks at [WooThemes](http://woothemes.com). It features a device-agnostic design so the layout responds to suit the browser, making it easy to stay up to date when you're on the go. Houston also introduces a handy new widget region beanth the post box and features integration with the "p2 likes" plugin.
 
 ## Changelog
+
+### Version 1.0.2 - 2013.09.17
+* Rename theme and functions.
+* Fix 404 page layout.
+* Post box textrea focused when visible.
 
 ### Version 1.0.1 - 2013.08.19
 * No longer enqueueing default p2 iphone css and scripts
