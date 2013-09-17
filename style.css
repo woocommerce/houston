@@ -1,9 +1,13 @@
 /*
 Theme Name:     Houston
-Description:    Houston is a child theme for p2 which features a device agnostic design. The layout responds to suit the screensize making it easy to stay up to date when you're on the go.
+Description:    Houston is a child theme for p2 which features a device agnostic design. The layout responds to suit the screensize making it easy to stay up to date when you're on the go. Houston also introduces a handy new widget region beanth the post box and integration with the "p2 likes" plugin.
 Author:         woothemes, jameskoster
+Author URI: 	http://woothemes.com
 Template:       p2
 Version:        1.0
+
+Houston WordPress Theme, Copyright 2013 woothemes.com
+Houston is distributed under the terms of the GNU GPL
 */
 /**
  * GRID.LESS
