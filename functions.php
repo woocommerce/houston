@@ -17,8 +17,8 @@ register_sidebar( array(
 /**
  * Tweak p2
  */
-add_action( 'init', 'woo_p2_custom' );
-function woo_p2_custom() {
+add_action( 'init', 'houston_custom' );
+function houston_custom() {
 	remove_action( 'wp_enqueue_scripts', 'p2_iphone_style', 1000 );
 }
 
@@ -26,18 +26,18 @@ function woo_p2_custom() {
 /**
  * Tweak p2 likes
  */
-add_action( 'init', 'woo_p2_likes_custom' );
-function woo_p2_likes_custom() {
+add_action( 'init', 'houston_likes_custom' );
+function houston_likes_custom() {
 	// Removes the 'like' button from posts and comments
 	remove_action( 'p2_action_links', 'p2_likes_action_links' );
 	remove_filter( 'comment_reply_link', 'p2_likes_comment_reply_link', 99, 4 );
 
 	// Adds our own 'like' button with some simple markup tweaks
-	add_action( 'p2_action_links', 'woo_p2_likes_action_links' );
-	add_filter( 'comment_reply_link', 'woo_p2_likes_comment_reply_link', 5, 4 );
+	add_action( 'p2_action_links', 'houston_likes_action_links' );
+	add_filter( 'comment_reply_link', 'houston_likes_comment_reply_link', 5, 4 );
 }
 
-function woo_p2_likes_action_links() {
+function houston_likes_action_links() {
 	global $post;
 	global $current_user;
 	$postmeta = get_post_meta( $post->ID, '_p2_likes', true );
@@ -47,7 +47,7 @@ function woo_p2_likes_action_links() {
 	echo " | <div class='p2-likes-link'><a rel='nofollow' class='p2-likes-post p2-likes-post-".$post->ID."' href='". get_permalink($post). "' title='".$like_text."' onclick='p2Likes(0,".$post->ID."); return false;'><span class='p2-likes-like'>".$like_text."</span><span class='p2-likes-count'>".$like_count."</span></a><div class='p2-likes-box'>".$users."</div></div>";
 }
 
-function woo_p2_likes_comment_reply_link( $link, $args, $comment, $post ) {
+function houston_likes_comment_reply_link( $link, $args, $comment, $post ) {
 	global $post;
 	global $comment;
 	global $current_user;
@@ -76,8 +76,8 @@ add_filter( 'wp_nav_menu_items', 'new_nav_menu_items', 10, 2 );
 /**
  * Add js to the frontend
  */
-add_action( 'wp_enqueue_scripts', 'woo_p2_scripts', 999 );
-function woo_p2_scripts() {
+add_action( 'wp_enqueue_scripts', 'houston_scripts', 999 );
+function houston_scripts() {
 	wp_enqueue_script( 'woo-p2-script', get_stylesheet_directory_uri() . '/js/script.min.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'fitvids', get_stylesheet_directory_uri() . '/js/fitvids.js', array( 'jquery' ), '', true );
 	wp_dequeue_script( 'iphone' );
@@ -87,8 +87,8 @@ function woo_p2_scripts() {
 /**
  * Add viewport meta
  */
-add_action( 'wp_head', 'woo_p2_viewport_meta' );
-function woo_p2_viewport_meta() {
+add_action( 'wp_head', 'houston_viewport_meta' );
+function houston_viewport_meta() {
 ?>
 	<!--  Mobile viewport scale | Disable user zooming as the layout is optimised -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
