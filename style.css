@@ -1962,6 +1962,22 @@ h2 .controls a#togglecomments:before {
   border-top-left-radius: 0.327em;
   border-top-right-radius: 0.327em;
 }
+.error404 #main p,
+.error404 #main .searchform {
+  padding: 1.618em;
+  margin: 0;
+  border: 1px solid #dddddd;
+  border-width: 0 1px;
+  background-color: #fff;
+}
+.error404 #main .searchform {
+  border-bottom-width: 1px;
+  padding-top: 0;
+}
+.error404 #main .searchform #searchsubmit {
+  padding-top: .53em;
+  padding-bottom: .53em;
+}
 #footer .credit {
   padding: 1.618em 0;
   border-top: 1px solid #dddddd;
@@ -2239,7 +2255,8 @@ h2 .controls a#togglecomments:before {
   }
   .single #main,
   .archive #main,
-  .page #main {
+  .page #main,
+  .error404 #main {
     display: inline;
     float: left;
     width: 62.705699545237216%;
