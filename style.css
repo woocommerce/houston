@@ -4,7 +4,7 @@ Description:    Houston is a child theme for p2, designed by the folks at WooThe
 Author:         woothemes
 Author URI: 	http://woothemes.com
 Template:       p2
-Version:        1.0.2
+Version:        1.0.3
 
 Houston WordPress Theme, Copyright 2013 woothemes.com
 Houston is distributed under the terms of the GNU GPL
@@ -703,6 +703,8 @@ body {
   -ms-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
 }
 h1,
 h2,
