@@ -2052,6 +2052,8 @@ h2 .controls a#togglecomments:before {
   }
   #header h1 {
     line-height: 2.244;
+    max-height: 51px;
+    overflow: hidden;
   }
   #header .widget_search {
     display: inline;
