@@ -61,6 +61,46 @@ function houston_viewport_meta() {
 }
 
 
+add_filter( 'the_content', 'houston_reply_link', 50 );
+function houston_reply_link( $content ) {
+	global $user_ID;
+
+	$post_type  = get_post_type();
+	$id 		= get_the_ID();
+	$reply_link = '';
+
+	if ( comments_open() && ( $post_type == 'post' || $post_type == 'page' ) ) {
+		if ( get_option( 'comment_registration' ) && ! $user_ID ) {
+			$reply_link = '<p class="reply"><a rel="nofollow" href="' . site_url( 'wp-login.php?redirect_to=' . urlencode( get_permalink() ) ) . '">' . esc_html( 'Please log in to reply', 'houston' ) . '</a></p>';
+		} else {
+			$reply_link = '<p class="reply"><a rel="nofollow" title="Reply" class="comment-reply-link main-reply" href="' . get_permalink() . '#respond" onclick="return addComment.moveForm(&quot;comments-' . $id . '&quot;, &quot;0&quot;, &quot;respond&quot;, &quot;' . $id . '&quot;)">Reply</a></p>';
+		}
+	}
+
+	return $content . $reply_link;
+}
+
+
+add_filter( 'comment_text', 'houston_comment_reply_link', 50 );
+function houston_comment_reply_link( $content ) {
+	global $user_ID;
+
+	$id 		= get_the_ID();
+	$commentid 	= get_comment_ID();
+	$reply_link = '';
+
+	if ( comments_open() ) {
+		if ( get_option( 'comment_registration' ) && ! $user_ID ) {
+			$reply_link = '<p class="reply"><a rel="nofollow" href="' . site_url( 'wp-login.php?redirect_to=' . urlencode( get_permalink() ) ) . '">' . esc_html( 'Please log in to reply', 'houston' ) . '</a></p>';
+		} else {
+			$reply_link = '<p class="reply"><a rel="nofollow" title="Reply" class="comment-reply-link main-reply" href="' . get_permalink() . '#respond" onclick="return addComment.moveForm(&quot;commentcontent-' . $commentid . '&quot;, &quot;' . $commentid . '&quot;, &quot;respond&quot;, &quot;' . $id . '&quot;)">Reply</a></p>';
+		}
+	}
+
+	return $content . $reply_link;
+}
+
+
 /**
  * Integrations
  * Include logic that integrates Houston with third party plugins
