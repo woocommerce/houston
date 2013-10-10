@@ -3,6 +3,9 @@ Houston is a child theme for [p2](http://p2theme.com/), designed by the folks at
 
 ## Changelog
 
+### Version 1.1.0 - 2013.10.11
+* Added a more prominent reply link
+
 ### Version 1.0.3 - 2013.10.10
 * Added word-wrap:break-word to fix overflowing links etc.
 * Better p2 likes integration.
