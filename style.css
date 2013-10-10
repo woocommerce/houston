@@ -4,7 +4,7 @@ Description:    Houston is a child theme for p2, designed by the folks at WooThe
 Author:         woothemes
 Author URI: 	http://woothemes.com
 Template:       p2
-Version:        1.0.2
+Version:        1.0.3
 
 Houston WordPress Theme, Copyright 2013 woothemes.com
 Houston is distributed under the terms of the GNU GPL
@@ -49,182 +49,199 @@ Houston is distributed under the terms of the GNU GPL
   display: inline;
 }
 .icon_date:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f133";
 }
 .icon_external {
   display: inline-block;
 }
 .icon_external:after {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  text-align: right;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-left: 7px;
+  content: "\f179";
   content: "\f08e";
 }
 .icon_video:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f03d";
 }
 .icon_status:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f0e7";
 }
 .icon_audio:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f025";
 }
 .icon_comment:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f075";
 }
 .icon_link:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f0c1";
 }
 .icon_folder:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f07b";
 }
 .icon_tag:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f02b";
 }
 .icon_post:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f0f6";
 }
 .icon_edit:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f040";
 }
 .icon_archive:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f115";
 }
 .icon_category:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f114";
 }
 .icon_page:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f0f6";
 }
 .icon_comment:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f0e5";
 }
 .icon_post:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f016";
 }
 /**
@@ -669,14 +686,15 @@ table {
   border-top: 0.236em solid #42a2ce;
 }
 #notify:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f05a";
   color: #42a2ce;
 }
@@ -703,6 +721,8 @@ body {
   -ms-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
 }
 h1,
 h2,
@@ -1075,26 +1095,37 @@ img.avatar {
   text-decoration: none;
 }
 #postbox #post-prompt:before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
-  content: "\f116";
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  content: "\f179";
+  content: "\f152";
   color: #d2d9d9;
-  -webkit-transition: all ease 0.4s;
-  -moz-transition: all ease 0.4s;
-  -o-transition: all ease 0.4s;
-  transition: all ease 0.4s;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-align: center;
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  margin-right: .236em;
 }
 #postbox #post-prompt:hover {
   background-color: #ffffff;
 }
 #postbox #post-prompt:hover:before {
   color: #4a5151;
+}
+#postbox #post-prompt.active {
+  background-color: #ffffff;
+  border-width: 1px 0 0 0;
+}
+#postbox #post-prompt.active:before {
   -webkit-transform: rotate(90deg);
   /* Saf3.1+, Chrome */
 
@@ -1110,13 +1141,6 @@ img.avatar {
   transform: rotate(90deg);
   zoom: 1;
 }
-#postbox #post-prompt.active {
-  background-color: #ffffff;
-  border-width: 1px 0 0 0;
-}
-#postbox #post-prompt.active:before {
-  content: "\f117";
-}
 #postbox .inputs {
   display: none;
 }
@@ -1128,7 +1152,7 @@ img.avatar {
 }
 #postbox #insert-media-button {
   display: block;
-  text-indent: -9999px;
+  text-indent: -999px;
   position: relative;
   height: 1em;
   width: 1em;
@@ -1149,6 +1173,7 @@ img.avatar {
   width: 100%;
   height: 100%;
   text-align: center;
+  content: "\f179";
   content: "\f03e";
 }
 #postbox input#tags {
@@ -1226,7 +1251,7 @@ h2 .controls a:hover {
 h2 .controls a#directions-keyboard,
 h2 .controls a#togglecomments {
   display: block;
-  text-indent: -9999px;
+  text-indent: -999px;
   position: relative;
   height: 1em;
   width: 1em;
@@ -1253,6 +1278,7 @@ h2 .controls a#directions-keyboard:before {
   width: 100%;
   height: 100%;
   text-align: center;
+  content: "\f179";
   content: "\f11c";
   line-height: 2;
 }
@@ -1272,6 +1298,7 @@ h2 .controls a#togglecomments:before {
   width: 100%;
   height: 100%;
   text-align: center;
+  content: "\f179";
   content: "\f0e6";
   line-height: 2;
 }
@@ -1281,7 +1308,7 @@ h2 .controls a#togglecomments:before {
 .site-navigation h1.assistive-text {
   display: block !important;
   display: block;
-  text-indent: -9999px;
+  text-indent: -999px;
   position: relative;
   height: 1em;
   width: 1em;
@@ -1309,6 +1336,7 @@ h2 .controls a#togglecomments:before {
   width: 100%;
   height: 100%;
   text-align: center;
+  content: "\f179";
   content: "\f0c9";
   font-size: 1.618em;
   color: #4a5151;
@@ -1328,6 +1356,9 @@ h2 .controls a#togglecomments:before {
 }
 .site-navigation .menu li a {
   padding: .236em 0;
+}
+.site-navigation .sub-menu {
+  padding-left: 0;
 }
 #main > h2:first-child {
   margin: 0 -1.618rem;
@@ -1503,14 +1534,15 @@ h2 .controls a#togglecomments:before {
 }
 #postlist .buttons button:nth-child(2n):before,
 #postlist form.textedit button:nth-child(2n):before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f05d";
 }
 #postlist .buttons button:nth-child(3n),
@@ -1519,14 +1551,15 @@ h2 .controls a#togglecomments:before {
 }
 #postlist .buttons button:nth-child(3n):before,
 #postlist form.textedit button:nth-child(3n):before {
-  font-family: 'FontAwesome';
-  speak: none;
+  font-family: "FontAwesome";
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 7px;
+  content: "\f179";
   content: "\f05c";
 }
 #postlist .buttons button:nth-child(3n):hover,
@@ -1698,7 +1731,7 @@ h2 .controls a#togglecomments:before {
 #postlist .meta .actions .p2-likes-like,
 #postlist .meta .actions .comment-edit-link {
   display: block;
-  text-indent: -9999px;
+  text-indent: -999px;
   position: relative;
   height: 1em;
   width: 1em;
@@ -1727,6 +1760,7 @@ h2 .controls a#togglecomments:before {
   width: 100%;
   height: 100%;
   text-align: center;
+  content: "\f179";
   color: #d2d9d9;
   height: 1.618em;
   width: 1.618em;
@@ -1923,7 +1957,7 @@ h2 .controls a#togglecomments:before {
 #respond .comment-reply-title #cancel-comment-reply-link {
   float: right;
   display: block;
-  text-indent: -9999px;
+  text-indent: -999px;
   position: relative;
   height: 1em;
   width: 1em;
@@ -1945,6 +1979,7 @@ h2 .controls a#togglecomments:before {
   width: 100%;
   height: 100%;
   text-align: center;
+  content: "\f179";
   content: "\f05c";
 }
 #respond textarea {
@@ -2005,9 +2040,6 @@ h2 .controls a#togglecomments:before {
   .admin-bar #header {
     top: 28px;
   }
-  .site-navigation h1.assistive-text {
-    display: none !important;
-  }
   #header {
     position: fixed;
     top: 0;
@@ -2050,6 +2082,8 @@ h2 .controls a#togglecomments:before {
   }
   #header h1 {
     line-height: 2.244;
+    max-height: 51px;
+    overflow: hidden;
   }
   #header .widget_search {
     display: inline;
@@ -2089,12 +2123,109 @@ h2 .controls a#togglecomments:before {
   }
   #header .menu li a {
     display: inline-block;
-    padding: 1em .857em;
-    font-size: 1.1em;
+    padding: 1.15em 1em;
+    font-size: 1em;
   }
   #header .menu li a:hover {
     color: #ffffff;
     background-color: #3898c4;
+  }
+  #header .site-navigation {
+    /**
+  			 * Level 1
+  			 */
+  
+    /**
+  			 * Level 2 +
+  			 */
+  
+  }
+  #header .site-navigation h1.assistive-text {
+    display: none !important;
+  }
+  #header .site-navigation li {
+    position: relative;
+  }
+  #header .site-navigation li:hover > a {
+    color: #ffffff;
+    background-color: #3898c4;
+  }
+  #header .site-navigation li:hover > .sub-menu {
+    filter: alpha(opacity=@opacity * 100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    visibility: visible;
+  }
+  #header .site-navigation .menu > li.parent > a:after {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    speak: none;
+    width: 1.5em;
+    display: inline-block;
+    text-align: right;
+    line-height: 1;
+    content: "\f107";
+  }
+  #header .site-navigation .sub-menu {
+    position: absolute;
+    width: 15.379em;
+    padding: 0;
+    margin: 0;
+    background: #3898c4;
+    filter: alpha(opacity=@opacity * 100);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all ease 0.238s;
+    -moz-transition: all ease 0.238s;
+    -o-transition: all ease 0.238s;
+    transition: all ease 0.238s;
+  }
+  #header .site-navigation .sub-menu li {
+    float: none;
+  }
+  #header .site-navigation .sub-menu li:hover > a {
+    padding-left: 1.387em;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  #header .site-navigation .sub-menu > li.parent > a:after {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    speak: none;
+    width: 1.5em;
+    display: inline-block;
+    text-align: right;
+    line-height: 1;
+    content: "\f105";
+    float: right;
+    line-height: 1.387;
+  }
+  #header .site-navigation .sub-menu a {
+    display: block;
+    color: #ffffff;
+    -webkit-transition: all ease 0.238s;
+    -moz-transition: all ease 0.238s;
+    -o-transition: all ease 0.238s;
+    transition: all ease 0.238s;
+    -webkit-transform: translateZ(0);
+  }
+  #header .site-navigation .sub-menu a:hover {
+    padding-left: 1.387em;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  #header .site-navigation > .sub-menu {
+    top: 100%;
+    left: 0;
+  }
+  #header .site-navigation .sub-menu .sub-menu {
+    top: 0;
+    left: 100%;
   }
   #sidebar {
     display: inline;
