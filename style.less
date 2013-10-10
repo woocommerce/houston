@@ -4,7 +4,7 @@ Description:    Houston is a child theme for p2, designed by the folks at WooThe
 Author:         woothemes
 Author URI: 	http://woothemes.com
 Template:       p2
-Version:        1.0.2
+Version:        1.0.3
 
 Houston WordPress Theme, Copyright 2013 woothemes.com
 Houston is distributed under the terms of the GNU GPL
@@ -119,6 +119,8 @@ body {
     -ms-text-size-adjust: 100%;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
 }
 h1, h2, h3, h4, h5, h6, .alpha, .beta, .gamma, .delta  {
 	color: darken(@color_body, 20%);
@@ -412,22 +414,26 @@ img.avatar {
 		.transition(all,ease,.4s);
 		&:before {
 			.iconbefore;
-			content: "\f116";
+			content: "\f152";
 			color: @color_body + #888;
-			.transition(all,ease,.4s);
+			width:1em;
+			height:1em;
+			line-height: 1;
+			text-align: center;
+			.transition(all,ease,.2s);
+			margin-right:.236em;
 		}
 		&:hover {
 			background-color: @bg_light;
 			&:before {
 				color: @color_body;
-				.rotate(90deg);
 			}
 		}
 		&.active {
 			background-color: @bg_light;
 			border-width:1px 0 0 0;
 			&:before {
-				content: "\f117";
+				.rotate(90deg);
 			}
 		}
 	}
@@ -548,6 +554,9 @@ h2 .controls {
 				padding:.236em 0;
 			}
 		}
+	}
+	.sub-menu {
+		padding-left:0;
 	}
 }
 
@@ -1080,11 +1089,6 @@ h2 .controls {
 			top:28px;
 		}
 	}
-	.site-navigation {
-		h1.assistive-text {
-			display: none !important;
-		}
-	}
 	#header {
 		position: fixed;
 		top:0;
@@ -1104,6 +1108,8 @@ h2 .controls {
 		}
 		h1 {
 			line-height: 2.244;
+			max-height: 51px;
+			overflow: hidden;
 		}
 		.widget_search {
 			.column(3,10);
@@ -1126,13 +1132,86 @@ h2 .controls {
 				float: left;
 				a {
 					display: inline-block;
-					padding:1em .857em;
-					font-size:1.1em;
+					padding:1.15em 1em;
+					font-size:1em;
 					&:hover {
 						color: @bg_light;
 						background-color: @color_links - #0a0a0a;
 					}
 				}
+			}
+		}
+		.site-navigation {
+			h1.assistive-text {
+				display: none !important;
+			}
+			li {
+				position: relative;
+				&:hover {
+					> a {
+						color: @bg_light;
+						background-color: @color_links - #0a0a0a;
+					}
+					> .sub-menu {
+						.opacity(1);
+						visibility: visible;
+					}
+				}
+			}
+			.menu > li.parent > a {
+				&:after {
+					.iconafter( "\f107" );
+				}
+			}
+			.sub-menu {
+				position: absolute;
+				width:15.379em;
+				padding:0;
+				margin:0;
+				background: @color_links - #0a0a0a;
+				.opacity(0);
+				visibility:hidden;
+				.transition;
+				li {
+					float: none;
+					&:hover {
+						> a {
+							padding-left:1.387em;
+							background: rgba(255,255,255,0.1);
+						}
+					}
+				}
+				> li.parent > a {
+					&:after {
+						.iconafter( "\f105" );
+						float: right;
+						line-height: 1.387;
+					}
+				}
+				a {
+					display: block;
+					color: @bg_light;
+					.transition;
+					-webkit-transform:translateZ(0);
+					&:hover {
+						padding-left:1.387em;
+						background: rgba(255,255,255,0.1);
+					}
+				}
+			}
+			/**
+			 * Level 1
+			 */
+			> .sub-menu {
+				top:100%;
+				left:0;
+			}
+			/**
+			 * Level 2 +
+			 */
+			.sub-menu .sub-menu {
+				top:0;
+				left:100%;
 			}
 		}
 	}
