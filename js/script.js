@@ -9,6 +9,9 @@ jQuery(document).ready(function(){
         jQuery( '#header ul.menu' ).slideToggle();
     });
 
+    // Add .parent class to appropriate menu items
+    jQuery( 'ul.sub-menu' ).parent().addClass( 'parent' );
+
     jQuery( 'body' ).fitVids();
 
     // Fix the post box when scrolling
