@@ -6,14 +6,40 @@
 /**
  * Functions
  */
+.iconbefore( @glyph: "\f179" ) {
+	font-family: "FontAwesome";
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	speak:none;
+	width:1.5em;
+	display: inline-block;
+	line-height: 1;
+	content: @glyph;
+}
+
+.iconafter( @glyph: "\f179" ) {
+	font-family: "FontAwesome";
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	speak:none;
+	width:1.5em;
+	display: inline-block;
+	text-align: right;
+	line-height: 1;
+	content: @glyph;
+}
+
 .ir() {
 	display: block;
-	text-indent: -9999px;
+	text-indent: -999px;
 	position: relative;
 	height:1em;
 	width:1em;
 }
-.icon() {
+
+.icon( @glyph: "\f179" ) {
 	font-family: 'FontAwesome';
 	speak: none;
 	font-weight: normal;
@@ -29,26 +55,7 @@
 	width:100%;
 	height: 100%;
 	text-align: center;
-}
-.iconbefore() {
-	font-family: 'FontAwesome';
-	speak: none;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	margin-right:7px;
-}
-.iconafter() {
-	font-family: 'FontAwesome';
-	speak: none;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	margin-left:7px;
+	content: @glyph;
 }
 
 .lifted() {
