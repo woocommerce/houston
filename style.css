@@ -1158,7 +1158,7 @@ img.avatar {
 }
 #postbox #insert-media-button {
   display: block;
-  text-indent: -999px;
+  text-indent: -9999px;
   position: relative;
   height: 1em;
   width: 1em;
@@ -1257,7 +1257,7 @@ h2 .controls a:hover {
 h2 .controls a#directions-keyboard,
 h2 .controls a#togglecomments {
   display: block;
-  text-indent: -999px;
+  text-indent: -9999px;
   position: relative;
   height: 1em;
   width: 1em;
@@ -1314,7 +1314,7 @@ h2 .controls a#togglecomments:before {
 .site-navigation h1.assistive-text {
   display: block !important;
   display: block;
-  text-indent: -999px;
+  text-indent: -9999px;
   position: relative;
   height: 1em;
   width: 1em;
@@ -1752,7 +1752,7 @@ h2 .controls a#togglecomments:before {
 #postlist .meta .actions .p2-likes-like,
 #postlist .meta .actions .comment-edit-link {
   display: block;
-  text-indent: -999px;
+  text-indent: -9999px;
   position: relative;
   height: 1em;
   width: 1em;
@@ -1978,7 +1978,7 @@ h2 .controls a#togglecomments:before {
 #respond .comment-reply-title #cancel-comment-reply-link {
   float: right;
   display: block;
-  text-indent: -999px;
+  text-indent: -9999px;
   position: relative;
   height: 1em;
   width: 1em;
