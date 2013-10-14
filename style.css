@@ -848,6 +848,17 @@ img.wp-smiley {
   font-style: italic;
   color: #aaaaaa;
 }
+.aligncenter {
+  margin: 0 auto 1.618em;
+}
+.alignleft {
+  float: left;
+  margin: 0 1em 1.618em 0;
+}
+.alignright {
+  float: right;
+  margin: 0 0 1.618em 1em;
+}
 /**
  * Forms
  */
