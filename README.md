@@ -12,6 +12,7 @@ Houston makes use of the following resources:
 ### Version 1.1.0 - 2013.10.14
 * Added a more prominent reply link.
 * Increased negative text-indent on icon replacement mixin.
+* Styled captions and fixed image alignment.
 
 ### Version 1.0.3 - 2013.10.10
 * Added word-wrap:break-word to fix overflowing links etc.
