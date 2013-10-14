@@ -824,6 +824,9 @@ mark {
   color: inherit;
   background: none;
 }
+/**
+ * Images
+ */
 img {
   max-width: 100%;
   height: auto;
@@ -833,6 +836,17 @@ img {
 }
 img.wp-smiley {
   display: inline-block;
+}
+.wp-caption {
+  max-width: 100%;
+  margin-bottom: 1.618em;
+}
+.wp-caption img {
+  margin-bottom: .618em;
+}
+.wp-caption-text {
+  font-style: italic;
+  color: #aaaaaa;
 }
 /**
  * Forms

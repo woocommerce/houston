@@ -9,7 +9,7 @@ Houston makes use of the following resources:
 
 ## Changelog
 
-### Version 1.1.0 - 2013.10.11
+### Version 1.1.0 - 2013.10.14
 * Added a more prominent reply link.
 * Increased negative text-indent on icon replacement mixin.
 

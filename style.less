@@ -202,6 +202,11 @@ mark {
 	color: inherit;
 	background:none;
 }
+
+
+/**
+ * Images
+ */
 img {
 	max-width:100%;
 	height: auto;
@@ -211,6 +216,18 @@ img {
 		display: inline-block;
 	}
 }
+.wp-caption {
+	max-width: 100%;
+	margin-bottom:1.618em;
+	img {
+		margin-bottom:.618em;
+	}
+}
+.wp-caption-text {
+	font-style: italic;
+	color: @bg_light - #555;
+}
+
 
 /**
  * Forms
