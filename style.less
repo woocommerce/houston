@@ -4,10 +4,16 @@ Description:    Houston is a child theme for p2, designed by the folks at WooThe
 Author:         woothemes
 Author URI: 	http://woothemes.com
 Template:       p2
-Version:        1.0.3
+Version:        1.1.0
+Tags: 			green, blue, custom-colors, two-columns, fixed-width, rtl-language-support, right-sidebar, white, light, front-page-post-form, translation-ready, custom-background, custom-header, custom-menu, post-formats, sticky-post, theme-options
+
 
 Houston WordPress Theme, Copyright 2013 woothemes.com
 Houston is distributed under the terms of the GNU GPL
+
+Houston makes use of the following resources:
+* FontAwesome Icon font. License: SIL Open Font License (OFL) - http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+
 */
 
 @import 'less/grid.less';
@@ -196,6 +202,11 @@ mark {
 	color: inherit;
 	background:none;
 }
+
+
+/**
+ * Images
+ */
 img {
 	max-width:100%;
 	height: auto;
@@ -205,6 +216,29 @@ img {
 		display: inline-block;
 	}
 }
+.wp-caption {
+	max-width: 100%;
+	margin-bottom:1.618em;
+	img {
+		margin-bottom:.618em;
+	}
+}
+.wp-caption-text {
+	font-style: italic;
+	color: @bg_light - #555;
+}
+.aligncenter {
+	margin:0 auto 1.618em;
+}
+.alignleft {
+	float: left;
+	margin:0 1em 1.618em 0;
+}
+.alignright {
+	float: right;
+	margin:0 0 1.618em 1em;
+}
+
 
 /**
  * Forms
@@ -739,6 +773,14 @@ h2 .controls {
 		h4, .postcontent, .commentcontent {
 			margin-left:28px;
 			margin-right:1.618em;
+		}
+	}
+	p.reply {
+		font-size: .857em;
+	}
+	.main-reply {
+		&:after {
+			.iconafter( "\f112" );
 		}
 	}
 	blockquote {
