@@ -1,7 +1,18 @@
 # Houston
 Houston is a child theme for [p2](http://p2theme.com/), designed by the folks at [WooThemes](http://woothemes.com). It features a device-agnostic design so the layout responds to suit the browser, making it easy to stay up to date when you're on the go. Houston also introduces a handy new widget region beanth the post box and features integration with the "p2 likes" plugin.
 
+### Resourses
+Houston makes use of the following resources:
+
+* [FontAwesome Icon font](http://fortawesome.github.io/Font-Awesome/). License: [SIL Open Font License (OFL)](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+
+
 ## Changelog
+
+### Version 1.1.0 - 2013.10.14
+* Added a more prominent reply link.
+* Increased negative text-indent on icon replacement mixin.
+* Styled captions and fixed image alignment.
 
 ### Version 1.0.3 - 2013.10.10
 * Added word-wrap:break-word to fix overflowing links etc.
