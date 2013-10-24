@@ -24,6 +24,12 @@ function houston_custom() {
 	remove_action( 'wp_enqueue_scripts', 'p2_iphone_style', 1000 );
 }
 
+add_action( 'admin_init', 'houston_customise_p2_settings', -1 );
+function houston_customise_p2_settings() {
+	unregister_setting( 'p2ops', 'p2_background_image' );
+}
+
+
 
 /**
  * Add the search widget to the nav
