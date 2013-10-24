@@ -9,6 +9,9 @@ Houston makes use of the following resources:
 
 ## Changelog
 
+### Version 1.1.1 - 2013.10.24
+* Better integration with stock p2 options.
+
 ### Version 1.1.0 - 2013.10.14
 * Added a more prominent reply link.
 * Increased negative text-indent on icon replacement mixin.

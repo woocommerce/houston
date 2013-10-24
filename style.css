@@ -4,7 +4,7 @@ Description:    Houston is a child theme for p2, designed by the folks at WooThe
 Author:         woothemes
 Author URI: 	http://woothemes.com
 Template:       p2
-Version:        1.1.0
+Version:        1.1.1
 Tags: 			green, blue, custom-colors, two-columns, fixed-width, rtl-language-support, right-sidebar, white, light, front-page-post-form, translation-ready, custom-background, custom-header, custom-menu, post-formats, sticky-post, theme-options
 
 
@@ -1460,6 +1460,7 @@ h2 .controls a#togglecomments:before {
   border: 1px solid #dddddd;
   border-width: 1px 0;
   position: relative;
+  background: #fff;
 }
 #postlist > li.post:before,
 #postlist li.type-page:before {
@@ -2080,6 +2081,7 @@ h2 .controls a#togglecomments:before {
   .header-inner,
   #wrapper,
   #footer {
+    width: auto !important;
     max-width: 85.998em;
     margin: 0 auto;
   }
@@ -2091,7 +2093,7 @@ h2 .controls a#togglecomments:before {
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
+    width: 100% !important;
     z-index: 99;
     padding: 0;
   }
@@ -2408,6 +2410,7 @@ h2 .controls a#togglecomments:before {
     border-width: 1px;
     -webkit-border-radius: 0.327em;
     border-radius: 0.327em;
+    background: #fff;
   }
   #postbox #post-prompt.active {
     border-width: 1px 1px 0 1px;
