@@ -4,16 +4,19 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 /**
  * Add a new sidebar beneath the post box.
  */
-register_sidebar( array(
-	'name'          => __( 'Beneath Post Box', 'Houston' ),
-	'id'            => 'beneath-post-box',
-	'description'   => '',
-    'class'         => '',
-	'before_widget' => '<section id="%1$s" class="widget %2$s">',
-	'after_widget'  => '</section>',
-	'before_title'  => '<h2 class="widgettitle">',
-	'after_title'   => '</h2>' )
-);
+add_action( 'widgets_init', 'houston_register_sidebar' );
+function houston_register_sidebar() {
+	register_sidebar( array(
+		'name'          => __( 'Beneath Post Box', 'Houston' ),
+		'id'            => 'beneath-post-box',
+		'description'   => '',
+	    'class'         => '',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widgettitle">',
+		'after_title'   => '</h2>' )
+	);
+}
 
 
 /**
@@ -28,14 +31,14 @@ function houston_custom() {
 /**
  * Add the search widget to the nav
  */
-function new_nav_menu_items( $items, $args ) {
+function houston_new_nav_menu_items( $items, $args ) {
 	if ( $args->theme_location == 'primary' ) {
 		$homelink 	= the_widget( 'WP_Widget_Search' );
 		$items 		= $items . $homelink;
 	}
 	return $items;
 }
-add_filter( 'wp_nav_menu_items', 'new_nav_menu_items', 10, 2 );
+add_filter( 'wp_nav_menu_items', 'houston_new_nav_menu_items', 10, 2 );
 
 
 /**
