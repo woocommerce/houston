@@ -11,6 +11,7 @@ Houston makes use of the following resources:
 
 ### Version 1.1.1 - 2013.10.24
 * Better integration with stock p2 options.
+* Renamed new_nav_menu_items().
 
 ### Version 1.1.0 - 2013.10.14
 * Added a more prominent reply link.
