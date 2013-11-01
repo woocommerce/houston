@@ -14,6 +14,7 @@ Houston makes use of the following resources:
 * Don't cut off long site titles.
 * Integration with [Mention Me](http://wordpress.org/plugins/mention-me/) plugin.
 * Integration with [Who's Online](http://wordpress.org/plugins/wp-whos-online/) plugin.
+* Fixed issue with button color when placed in widgets.
 
 ### Version 1.1.1 - 2013.10.24
 * Better integration with stock p2 options.

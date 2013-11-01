@@ -1922,6 +1922,10 @@ h2 .controls a#togglecomments:before {
 .widget a:hover {
   border-bottom-style: solid;
 }
+.widget a.button {
+  color: #fff;
+  border: 0;
+}
 .searchform {
   *zoom: 1;
   margin: 0;
