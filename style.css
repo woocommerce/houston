@@ -2172,29 +2172,13 @@ h2 .controls a#togglecomments:before {
     clear: both;
   }
   #header .sleeve {
-    display: inline;
-    float: left;
-    width: 12.705699545237223%;
     margin-left: 1.9804835607147224%;
-    margin-right: 1.9804835607147224%;
-    *width: 12.65361621190389%;
-    *margin-left: 1.9284002273813892%;
-    *margin-right: 1.9284002273813892%;
-  }
-  #header .main-navigation {
-    display: inline;
+    margin-right: 3.960967121%;
     float: left;
-    width: 79.37236621190388%;
-    margin-left: 1.9804835607147224%;
-    margin-right: 1.9804835607147224%;
-    *width: 79.32028287857055%;
-    *margin-left: 1.9284002273813892%;
-    *margin-right: 1.9284002273813892%;
   }
   #header h1 {
     line-height: 2.244;
     max-height: 51px;
-    overflow: hidden;
   }
   #header .widget_search {
     display: inline;

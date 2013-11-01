@@ -10,7 +10,8 @@ Houston makes use of the following resources:
 ## Changelog
 
 ### Version 1.2.0 - 2013.11.01
-* Integration with [p2 resolved posts](http://wordpress.org/plugins/p2-resolved-posts/) (Kudos John O'Nolan)
+* Integration with [p2 resolved posts](http://wordpress.org/plugins/p2-resolved-posts/) (Kudos John O'Nolan).
+* Don't cut off long site titles.
 
 ### Version 1.1.1 - 2013.10.24
 * Better integration with stock p2 options.
