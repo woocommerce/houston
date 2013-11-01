@@ -1113,6 +1113,61 @@ h2 .controls {
 }
 
 /**
+ * Plugins
+ */
+
+// Resolved Posts Plugin
+
+// Slightly hacky cause we need to override inline <styles>
+#main #postlist {
+	.meta .actions .state-normal {
+		.ir;
+		display: inline-block;
+		color: @color_links;
+		//margin-right:.236em;
+		width:1.618em;
+		height:1.618em;
+		&:before {
+			.icon;
+			color: @color_body + #888;
+			height:1.618em;
+			width:1.618em;
+			line-height: 1.618;
+		}
+		&:hover {
+			&:before {
+				color: @color_body;
+			}
+		}
+	}
+	li.hentry .actions a.state-normal:hover {
+		background-color: transparent !important;
+	}
+	.meta .actions .state-normal:before {
+		content: "\f071";
+	}
+	.hentry {
+		border-left: #ddd 1px solid !important;
+		padding-left: 1.618em !important;
+	}
+	.hentry.state-unresolved {
+		box-shadow: #E6000A 5px 0 0 inset;
+		border-left-color: #E6000A !important;
+	}
+	.hentry.state-resolved {
+		box-shadow: #8dc05d 5px 0 0 inset;
+		border-left-color: #8dc05d !important;
+		.actions a.p2-resolve-link {
+			background-color: #8dc05d !important;
+		}
+	}
+}
+
+.p2-resolved-posts-audit-log img {
+	width: 16px !important;
+}
+
+/**
  * Layout
  */
 
