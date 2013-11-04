@@ -4,7 +4,7 @@ Description:    Houston is a child theme for p2, designed by the folks at WooThe
 Author:         woothemes
 Author URI: 	http://woothemes.com
 Template:       p2
-Version:        1.1.1
+Version:        1.2.0
 Tags: 			green, blue, custom-colors, two-columns, fixed-width, rtl-language-support, right-sidebar, white, light, front-page-post-form, translation-ready, custom-background, custom-header, custom-menu, post-formats, sticky-post, theme-options
 
 
@@ -898,7 +898,7 @@ textarea {
   padding: .382em;
   font-family: inherit;
   font-size: 1em;
-  color: #4a5151;
+  color: #6c7373;
   -webkit-border-radius: 0.327em;
   border-radius: 0.327em;
   width: 100%;
@@ -1077,7 +1077,6 @@ img.avatar {
   border-bottom: 0;
   -webkit-appearance: none;
   margin: 0;
-  color: #6c7373;
   background-color: #fcfcfc;
 }
 #postbox #new_post textarea:active,
@@ -1085,7 +1084,6 @@ img.avatar {
 #postbox #new_post textarea:focus,
 #postbox #new_post input#tags:focus {
   background-color: #fff;
-  color: #4a5151;
 }
 #postbox #new_post input[type=submit] {
   -webkit-border-radius: 0;
@@ -1177,6 +1175,7 @@ img.avatar {
 }
 #postbox #posttext {
   clear: both;
+  line-height: 1.618;
 }
 #postbox #media-buttons {
   float: right;
@@ -1922,6 +1921,10 @@ h2 .controls a#togglecomments:before {
 .widget a:hover {
   border-bottom-style: solid;
 }
+.widget a.button {
+  color: #fff;
+  border: 0;
+}
 .searchform {
   *zoom: 1;
   margin: 0;
@@ -2069,6 +2072,98 @@ h2 .controls a#togglecomments:before {
   border-top: 1px solid #dddddd;
 }
 /**
+ * Plugins
+ */
+#main #postlist .meta .actions .state-normal {
+  display: block;
+  text-indent: -9999px;
+  position: relative;
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+  color: #42a2ce;
+  width: 1.618em;
+  height: 1.618em;
+}
+#main #postlist .meta .actions .state-normal:before {
+  font-family: 'FontAwesome';
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  text-indent: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  content: "\f179";
+  color: #d2d9d9;
+  height: 1.618em;
+  width: 1.618em;
+  line-height: 1.618;
+}
+#main #postlist .meta .actions .state-normal:hover:before {
+  color: #4a5151;
+}
+#main #postlist li.hentry .actions a.state-normal:hover {
+  background-color: transparent !important;
+}
+#main #postlist .meta .actions .state-normal:before {
+  content: "\f071";
+}
+#main #postlist .hentry {
+  border-left: #ddd 1px solid !important;
+  padding-left: 1.618em !important;
+}
+#main #postlist .hentry.state-unresolved {
+  box-shadow: #E6000A 5px 0 0 inset;
+  border-left-color: #E6000A !important;
+}
+#main #postlist .hentry.state-resolved {
+  box-shadow: #8dc05d 5px 0 0 inset;
+  border-left-color: #8dc05d !important;
+}
+#main #postlist .hentry.state-resolved .actions a.p2-resolve-link {
+  background-color: #8dc05d !important;
+}
+.p2-resolved-posts-audit-log img {
+  width: 16px !important;
+}
+.p2-recent-mentions td.avatar {
+  padding-right: 1em;
+  width: 16px !important;
+  height: 16px !important;
+  vertical-align: top;
+}
+.p2-recent-mentions td.avatar img {
+  width: 16px;
+  height: auto;
+}
+.p2-recent-mentions td {
+  padding-bottom: 1.618em;
+}
+.p2-recent-mentions tr:last-child td {
+  padding-bottom: 0;
+}
+.wpwhosonline-list .wpwhosonline-row {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.wpwhosonline-list .wpwhosonline-row > img {
+  margin-right: 1em !important;
+}
+.wpwhosonline-list .wpwhosonline-row:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: 0;
+}
+/**
  * Layout
  */
 @media only screen and (min-width: 768px) {
@@ -2109,29 +2204,13 @@ h2 .controls a#togglecomments:before {
     clear: both;
   }
   #header .sleeve {
-    display: inline;
-    float: left;
-    width: 12.705699545237223%;
     margin-left: 1.9804835607147224%;
-    margin-right: 1.9804835607147224%;
-    *width: 12.65361621190389%;
-    *margin-left: 1.9284002273813892%;
-    *margin-right: 1.9284002273813892%;
-  }
-  #header .main-navigation {
-    display: inline;
+    margin-right: 3.960967121%;
     float: left;
-    width: 79.37236621190388%;
-    margin-left: 1.9804835607147224%;
-    margin-right: 1.9804835607147224%;
-    *width: 79.32028287857055%;
-    *margin-left: 1.9284002273813892%;
-    *margin-right: 1.9284002273813892%;
   }
   #header h1 {
     line-height: 2.244;
     max-height: 51px;
-    overflow: hidden;
   }
   #header .widget_search {
     display: inline;

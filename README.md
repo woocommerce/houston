@@ -9,6 +9,15 @@ Houston makes use of the following resources:
 
 ## Changelog
 
+### Version 1.2.0 - 2013.11.04
+* Integration with [p2 resolved posts](http://wordpress.org/plugins/p2-resolved-posts/) (Kudos John O'Nolan).
+* Don't cut off long site titles.
+* Integration with [Mention Me](http://wordpress.org/plugins/mention-me/) plugin.
+* Integration with [Who's Online](http://wordpress.org/plugins/wp-whos-online/) plugin.
+* Fixed issue with button color when placed in widgets.
+* Fixed post textarea from expanding beyond the window height and becoming unpublishable.
+* Tweaked the post box textarea line height.
+
 ### Version 1.1.1 - 2013.10.24
 * Better integration with stock p2 options.
 * Renamed new_nav_menu_items().

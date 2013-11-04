@@ -42,12 +42,23 @@ jQuery(document).ready(function(){
         }
 
     });
+
+    // Make sure the post textarea doesn't grow too tall
+    if ( jQuery( window ).width() > breakpoint ) {
+        var npbh    = wh - 400;
+        jQuery( '#posttext' ).css({ "max-height": npbh + 'px' });
+    }
+
+    // Check the position / textarea height on window resize
     $(window).resize(function(){
         if ( jQuery( window ).width() > breakpoint ) {
-            var pbw       = $('#postbox').width();
-            $( '#postbox .postboxcontent' ).css( 'width', pbw );
+            var pbw       = jQuery('#postbox').width();
+            var wh        = jQuery( window ).height();
+            var npbh      = wh - 400;
+            jQuery( '#postbox .postboxcontent' ).css( 'width', pbw );
+            jQuery( '#posttext' ).css({ "max-height": npbh + 'px' });
         } else {
-            $( '#postbox .postboxcontent' ).removeClass( 'fixed' ).removeAttr( 'style' );
+            jQuery( '#postbox .postboxcontent' ).removeClass( 'fixed' ).removeAttr( 'style' );
         }
     });
 

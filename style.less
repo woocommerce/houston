@@ -4,7 +4,7 @@ Description:    Houston is a child theme for p2, designed by the folks at WooThe
 Author:         woothemes
 Author URI: 	http://woothemes.com
 Template:       p2
-Version:        1.1.1
+Version:        1.2.0
 Tags: 			green, blue, custom-colors, two-columns, fixed-width, rtl-language-support, right-sidebar, white, light, front-page-post-form, translation-ready, custom-background, custom-header, custom-menu, post-formats, sticky-post, theme-options
 
 
@@ -265,7 +265,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="sea
 	padding:.382em;
 	font-family: inherit;
 	font-size:1em;
-	color: @color_body;
+	color: @color_body + #222;
 	.border_radius;
 	width:100%;
 	.transition;
@@ -412,11 +412,9 @@ img.avatar {
 			border-bottom:0;
 			-webkit-appearance:none;
 			margin:0;
-			color:@color_body + #222;
 			background-color: darken(@bg_light, 1%);
 			&:active, &:focus {
 				background-color: #fff;
-				color: @color_body;
 			}
 		}
 		input[type=submit] {
@@ -476,6 +474,7 @@ img.avatar {
 	}
 	#posttext {
 		clear:both;
+		line-height: 1.618;
 	}
 	#media-buttons {
 		float: right;
@@ -995,6 +994,10 @@ h2 .controls {
 		&:hover {
 			border-bottom-style:solid;
 		}
+		&.button {
+			color: #fff;
+			border:0;
+		}
 	}
 }
 .searchform {
@@ -1113,6 +1116,102 @@ h2 .controls {
 }
 
 /**
+ * Plugins
+ */
+
+// Resolved Posts Plugin
+
+// Slightly hacky cause we need to override inline <styles>
+#main #postlist {
+	.meta .actions .state-normal {
+		.ir;
+		display: inline-block;
+		color: @color_links;
+		//margin-right:.236em;
+		width:1.618em;
+		height:1.618em;
+		&:before {
+			.icon;
+			color: @color_body + #888;
+			height:1.618em;
+			width:1.618em;
+			line-height: 1.618;
+		}
+		&:hover {
+			&:before {
+				color: @color_body;
+			}
+		}
+	}
+	li.hentry .actions a.state-normal:hover {
+		background-color: transparent !important;
+	}
+	.meta .actions .state-normal:before {
+		content: "\f071";
+	}
+	.hentry {
+		border-left: #ddd 1px solid !important;
+		padding-left: 1.618em !important;
+	}
+	.hentry.state-unresolved {
+		box-shadow: #E6000A 5px 0 0 inset;
+		border-left-color: #E6000A !important;
+	}
+	.hentry.state-resolved {
+		box-shadow: #8dc05d 5px 0 0 inset;
+		border-left-color: #8dc05d !important;
+		.actions a.p2-resolve-link {
+			background-color: #8dc05d !important;
+		}
+	}
+}
+
+.p2-resolved-posts-audit-log img {
+	width: 16px !important;
+}
+
+// Mention Me Plugin
+.p2-recent-mentions {
+	td.avatar {
+		padding-right:1em;
+		width:16px !important;
+		height:16px !important;
+		vertical-align: top;
+		img {
+			width:16px;
+			height: auto;
+		}
+	}
+	td {
+		padding-bottom:1.618em;
+	}
+	tr {
+		&:last-child {
+			td {
+				padding-bottom:0;
+			}
+		}
+	}
+}
+
+// Who's online plugin
+.wpwhosonline-list {
+	.wpwhosonline-row {
+		margin-bottom:1em;
+		padding-bottom:1em;
+		border-bottom:1px solid rgba(0,0,0,0.05);
+		> img {
+			margin-right:1em !important;
+		}
+		&:last-child {
+			margin-bottom:0;
+			padding-bottom:0;
+			border:0;
+		}
+	}
+}
+
+/**
  * Layout
  */
 
@@ -1145,15 +1244,13 @@ h2 .controls {
 			.clearfix;
 		}
 		.sleeve {
-			.column(2);
-		}
-		.main-navigation {
-			.column(10);
+			margin-left:1.9804835607147224%;
+			margin-right:3.960967121%;
+			float: left;
 		}
 		h1 {
 			line-height: 2.244;
 			max-height: 51px;
-			overflow: hidden;
 		}
 		.widget_search {
 			.column(3,10);
