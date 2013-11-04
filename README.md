@@ -16,6 +16,7 @@ Houston makes use of the following resources:
 * Integration with [Who's Online](http://wordpress.org/plugins/wp-whos-online/) plugin.
 * Fixed issue with button color when placed in widgets.
 * Fixed post textarea from expanding beyond the window height and becoming unpublishable.
+* Tweaked the post box textarea line height.
 
 ### Version 1.1.1 - 2013.10.24
 * Better integration with stock p2 options.

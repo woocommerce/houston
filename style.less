@@ -265,7 +265,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="sea
 	padding:.382em;
 	font-family: inherit;
 	font-size:1em;
-	color: @color_body;
+	color: @color_body + #222;
 	.border_radius;
 	width:100%;
 	.transition;
@@ -412,11 +412,9 @@ img.avatar {
 			border-bottom:0;
 			-webkit-appearance:none;
 			margin:0;
-			color:@color_body + #222;
 			background-color: darken(@bg_light, 1%);
 			&:active, &:focus {
 				background-color: #fff;
-				color: @color_body;
 			}
 		}
 		input[type=submit] {
@@ -476,6 +474,7 @@ img.avatar {
 	}
 	#posttext {
 		clear:both;
+		line-height: 1.618;
 	}
 	#media-buttons {
 		float: right;
