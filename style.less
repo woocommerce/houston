@@ -30,6 +30,7 @@ Houston makes use of the following resources:
 @green: 		#8dc05d;
 @red: 			#df8375;
 @color_alt: 	#42a2ce;
+@border_main:	#dfdfdf;
 
 
 /**
@@ -201,6 +202,109 @@ dl {
 mark {
 	color: inherit;
 	background:none;
+}
+
+/**
+ * Tables
+ */
+table {
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid @border_main;
+	background: @bg_light;
+	border-collapse: separate;
+	margin-bottom:1.618em;
+
+	caption {
+		background: @bg_light - #040404;
+		padding: 1em;
+		border: 1px solid @border_main;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		&:first-child {
+			border-bottom:0;
+		}
+	}
+
+	td,
+	th {
+		padding: .857em 1em;
+		text-align: left;
+		border-right: 1px dotted @border_main;
+		vertical-align: top;
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	thead {
+		th {
+			background: #fff;
+			border-right: 1px dotted @bg_light - #111;
+			border-bottom: 1px solid @border_main;
+			padding: 1em;
+			vertical-align: middle;
+		}
+	}
+
+	tr {
+		th:last-child,
+		td:last-child {
+			border-right: 0;
+		}
+	}
+
+	tbody {
+		th {
+			background: #fff;
+			border-bottom: 1px solid @border_main;
+		}
+
+		tr:nth-child(2n) {
+			td {
+				background: @bg_light - #040404;
+				border-right: 1px dotted @bg_light - #111;
+
+				&:last-child {
+					border-right: 0;
+				}
+			}
+		}
+
+		td {
+			background:bg_light;
+			border-bottom: 1px solid @border_main;
+		}
+
+		h2 {
+			font-size: 1em;
+			letter-spacing: normal;
+			font-weight: normal;
+
+			a {
+				font-weight: normal;
+			}
+		}
+
+		tr:last-child {
+			td {
+				border-bottom: 0;
+			}
+
+			th:first-child {
+				border-bottom:0;
+			}
+		}
+	}
+
+	tfoot {
+		th,
+		td {
+			border-top:1px solid @border_main;
+		}
+	}
 }
 
 

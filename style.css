@@ -311,19 +311,14 @@ audio:not([controls]) {
 html {
   background: #fff;
   /* 1 */
-
   color: #000;
   /* 2 */
-
   font-family: sans-serif;
   /* 3 */
-
   -ms-text-size-adjust: 100%;
   /* 4 */
-
   -webkit-text-size-adjust: 100%;
   /* 4 */
-
 }
 /**
  * Remove default margin.
@@ -478,10 +473,8 @@ fieldset {
 legend {
   border: 0;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /**
  * 1. Correct font family not being inherited in all browsers.
@@ -494,13 +487,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-
   font-size: 100%;
   /* 2 */
-
   margin: 0;
   /* 3 */
-
 }
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
@@ -533,10 +523,8 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-
   cursor: pointer;
   /* 3 */
-
 }
 /**
  * Re-set default cursor for disabled elements.
@@ -553,10 +541,8 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -566,11 +552,9 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-
   box-sizing: content-box;
 }
 /**
@@ -596,10 +580,8 @@ input::-moz-focus-inner {
 textarea {
   overflow: auto;
   /* 1 */
-
   vertical-align: top;
   /* 2 */
-
 }
 /* ==========================================================================
    Tables
@@ -634,13 +616,10 @@ table {
   padding: 2.618em;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
   -webkit-border-radius: 0.327em;
   border-radius: 0.327em;
   color: #6c7373;
@@ -662,13 +641,10 @@ table {
   font-size: .857em;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
   -webkit-border-radius: 0.327em;
   border-radius: 0.327em;
   text-align: center;
@@ -825,6 +801,82 @@ mark {
   background: none;
 }
 /**
+ * Tables
+ */
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #dfdfdf;
+  background: #ffffff;
+  border-collapse: separate;
+  margin-bottom: 1.618em;
+}
+table caption {
+  background: #fbfbfb;
+  padding: 1em;
+  border: 1px solid #dfdfdf;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+table caption:first-child {
+  border-bottom: 0;
+}
+table td,
+table th {
+  padding: .857em 1em;
+  text-align: left;
+  border-right: 1px dotted #dfdfdf;
+  vertical-align: top;
+}
+table td p:last-child,
+table th p:last-child {
+  margin-bottom: 0;
+}
+table thead th {
+  background: #fff;
+  border-right: 1px dotted #eeeeee;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 1em;
+  vertical-align: middle;
+}
+table tr th:last-child,
+table tr td:last-child {
+  border-right: 0;
+}
+table tbody th {
+  background: #fff;
+  border-bottom: 1px solid #dfdfdf;
+}
+table tbody tr:nth-child(2n) td {
+  background: #fbfbfb;
+  border-right: 1px dotted #eeeeee;
+}
+table tbody tr:nth-child(2n) td:last-child {
+  border-right: 0;
+}
+table tbody td {
+  background: bg_light;
+  border-bottom: 1px solid #dfdfdf;
+}
+table tbody h2 {
+  font-size: 1em;
+  letter-spacing: normal;
+  font-weight: normal;
+}
+table tbody h2 a {
+  font-weight: normal;
+}
+table tbody tr:last-child td {
+  border-bottom: 0;
+}
+table tbody tr:last-child th:first-child {
+  border-bottom: 0;
+}
+table tfoot th,
+table tfoot td {
+  border-top: 1px solid #dfdfdf;
+}
+/**
  * Images
  */
 img {
@@ -867,13 +919,10 @@ input {
   max-width: 100%;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
   outline: none;
 }
 textarea {
@@ -1056,13 +1105,10 @@ img.avatar {
 #postbox #new_post {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
 }
 #postbox #new_post textarea,
 #postbox #new_post input#tags {
@@ -1157,16 +1203,12 @@ img.avatar {
 #postbox #post-prompt.active:before {
   -webkit-transform: rotate(90deg);
   /* Saf3.1+, Chrome */
-
   -moz-transform: rotate(90deg);
   /* FF3.5+ */
-
   -ms-transform: rotate(90deg);
   /* IE9 */
-
   -o-transform: rotate(90deg);
   /* Opera 10.5 */
-
   transform: rotate(90deg);
   zoom: 1;
 }
@@ -1232,13 +1274,10 @@ img.avatar {
   -ms-transform: skew(-3deg, -2deg);
   -webkit-transform: skew(-3deg, -2deg);
   /* Safari and Chrome */
-
   -o-transform: skew(-3deg, -2deg);
   /* Opera */
-
   -moz-transform: skew(-3deg, -2deg);
   /* Firefox */
-
   bottom: 13px;
   -webkit-box-shadow: 0 15px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 15px 5px 0 rgba(0, 0, 0, 0.2);
@@ -1250,16 +1289,12 @@ img.avatar {
 #postbox .postbox-sidebar .widget_text:after {
   -ms-transform: skew(3deg, 2deg);
   /* IE 9 */
-
   -webkit-transform: skew(3deg, 2deg);
   /* Safari and Chrome */
-
   -o-transform: skew(3deg, 2deg);
   /* Opera */
-
   -moz-transform: skew(3deg, 2deg);
   /* Firefox */
-
   left: auto;
   right: 3px;
 }
@@ -1505,16 +1540,12 @@ h2 .controls a#togglecomments:before {
   line-height: 1;
   -webkit-transform: rotate(-45deg);
   /* Saf3.1+, Chrome */
-
   -moz-transform: rotate(-45deg);
   /* FF3.5+ */
-
   -ms-transform: rotate(-45deg);
   /* IE9 */
-
   -o-transform: rotate(-45deg);
   /* Opera 10.5 */
-
   transform: rotate(-45deg);
   zoom: 1;
 }
@@ -1532,13 +1563,10 @@ h2 .controls a#togglecomments:before {
   float: left;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
 }
 #postlist h4,
 #postlist .postcontent,
@@ -1954,13 +1982,10 @@ h2 .controls a#togglecomments:before {
   text-align: center;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
   -webkit-border-top-left-radius: 0;
   -webkit-border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -2259,13 +2284,11 @@ h2 .controls a#togglecomments:before {
   }
   #header .site-navigation {
     /**
-  			 * Level 1
-  			 */
-  
+			 * Level 1
+			 */
     /**
-  			 * Level 2 +
-  			 */
-  
+			 * Level 2 +
+			 */
   }
   #header .site-navigation h1.assistive-text {
     display: none !important;
@@ -2552,13 +2575,10 @@ h2 .controls a#togglecomments:before {
   background: #ffffff;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
   border-color: #dddddd !important;
   padding: 0;
   -webkit-border-radius: 0.327em;
@@ -2574,13 +2594,10 @@ h2 .controls a#togglecomments:before {
   width: 100% !important;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
   cursor: pointer;
   font-weight: normal !important;
   border: 0 !important;
