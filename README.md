@@ -9,6 +9,9 @@ Houston makes use of the following resources:
 
 ## Changelog
 
+### Version 1.3.0 - 2013.11.20
+* Styled tables.
+
 ### Version 1.2.0 - 2013.11.04
 * Integration with [p2 resolved posts](http://wordpress.org/plugins/p2-resolved-posts/) (Kudos John O'Nolan).
 * Don't cut off long site titles.
