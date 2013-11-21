@@ -214,11 +214,10 @@ table {
 	background: @bg_light;
 	border-collapse: separate;
 	margin-bottom:1.618em;
+	border-radius: 3px;
 
 	caption {
-		background: @bg_light - #040404;
 		padding: 1em;
-		border: 1px solid @border_main;
 		font-weight: 700;
 		text-transform: uppercase;
 
@@ -246,6 +245,14 @@ table {
 			border-bottom: 1px solid @border_main;
 			padding: 1em;
 			vertical-align: middle;
+
+			&:first-child {
+				border-radius: 3px 0 0 0;
+			}
+
+			&:last-child {
+				border-radius: 0 3px 0 0;
+			}
 		}
 	}
 
@@ -295,6 +302,18 @@ table {
 
 			th:first-child {
 				border-bottom:0;
+			}
+		}
+	}
+
+	tbody:last-child,
+	tfoot:last-child {
+		tr:last-child {
+			td:first-child {
+				border-radius: 0 0 0 3px;
+			}
+			td:last-child {
+				border-radius: 0 0 3px 0;
 			}
 		}
 	}

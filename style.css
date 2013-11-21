@@ -810,11 +810,10 @@ table {
   background: #ffffff;
   border-collapse: separate;
   margin-bottom: 1.618em;
+  border-radius: 3px;
 }
 table caption {
-  background: #fbfbfb;
   padding: 1em;
-  border: 1px solid #dfdfdf;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -838,6 +837,12 @@ table thead th {
   border-bottom: 1px solid #dfdfdf;
   padding: 1em;
   vertical-align: middle;
+}
+table thead th:first-child {
+  border-radius: 3px 0 0 0;
+}
+table thead th:last-child {
+  border-radius: 0 3px 0 0;
 }
 table tr th:last-child,
 table tr td:last-child {
@@ -871,6 +876,14 @@ table tbody tr:last-child td {
 }
 table tbody tr:last-child th:first-child {
   border-bottom: 0;
+}
+table tbody:last-child tr:last-child td:first-child,
+table tfoot:last-child tr:last-child td:first-child {
+  border-radius: 0 0 0 3px;
+}
+table tbody:last-child tr:last-child td:last-child,
+table tfoot:last-child tr:last-child td:last-child {
+  border-radius: 0 0 3px 0;
 }
 table tfoot th,
 table tfoot td {
