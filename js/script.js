@@ -23,8 +23,9 @@ jQuery(document).ready(function(){
     var pos         = $( '#postbox .postboxcontent' ).position();
 
     $(window).scroll(function() {
-        // Only fix it in position if the window is wider than the layout breakpoint and the window height is taller than the postbox
-        if ( jQuery( window ).width() > breakpoint && wh > pbh ) {
+        // Only fix it in position if the window is wider than the layout breakpoint
+        // and if the postbox is not taller than the window
+        if ( jQuery( window ).width() > breakpoint && pbh < ( wh - 124 ) ) {
 
             var offset  = 0;
             var sticky  = false;
