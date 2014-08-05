@@ -863,6 +863,9 @@ table tbody td {
   background: bg_light;
   border-bottom: 1px solid #dfdfdf;
 }
+table tbody td.kudos-message {
+  word-break: break-word;
+}
 table tbody h2 {
   font-size: 1em;
   letter-spacing: normal;
@@ -2253,12 +2256,12 @@ h2 .controls a#togglecomments:before {
   #header .widget_search {
     display: inline;
     float: left;
-    width: 25.246839454284668%;
-    margin-left: 2.3765802728576673%;
-    margin-right: 2.3765802728576673%;
-    *width: 25.194756120951336%;
-    *margin-left: 2.324496939524334%;
-    *margin-right: 2.324496939524334%;
+    width: 25.24683945%;
+    margin-left: 2.37658027%;
+    margin-right: 2.37658027%;
+    *width: 25.19475612%;
+    *margin-left: 2.32449694%;
+    *margin-right: 2.32449694%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -2393,12 +2396,12 @@ h2 .controls a#togglecomments:before {
   #sidebar {
     display: inline;
     float: left;
-    width: 12.705699545237223%;
-    margin-left: 1.9804835607147224%;
-    margin-right: 1.9804835607147224%;
-    *width: 12.65361621190389%;
-    *margin-left: 1.9284002273813892%;
-    *margin-right: 1.9284002273813892%;
+    width: 12.70569955%;
+    margin-left: 1.98048356%;
+    margin-right: 1.98048356%;
+    *width: 12.65361621%;
+    *margin-left: 1.92840023%;
+    *margin-right: 1.92840023%;
     font-size: .857em;
   }
   #postlist {
@@ -2504,12 +2507,12 @@ h2 .controls a#togglecomments:before {
   #postbox {
     display: inline;
     float: left;
-    width: 29.372366211903888%;
-    margin-left: 1.9804835607147224%;
-    margin-right: 1.9804835607147224%;
-    *width: 29.320282878570556%;
-    *margin-left: 1.9284002273813892%;
-    *margin-right: 1.9284002273813892%;
+    width: 29.37236621%;
+    margin-left: 1.98048356%;
+    margin-right: 1.98048356%;
+    *width: 29.32028288%;
+    *margin-left: 1.92840023%;
+    *margin-right: 1.92840023%;
   }
   #postbox #new_post textarea,
   #postbox #new_post input#tags {
@@ -2537,12 +2540,12 @@ h2 .controls a#togglecomments:before {
   #main {
     display: inline;
     float: left;
-    width: 46.03903287857055%;
-    margin-left: 1.9804835607147224%;
-    margin-right: 1.9804835607147224%;
-    *width: 45.986949545237216%;
-    *margin-left: 1.9284002273813892%;
-    *margin-right: 1.9284002273813892%;
+    width: 46.03903288%;
+    margin-left: 1.98048356%;
+    margin-right: 1.98048356%;
+    *width: 45.98694955%;
+    *margin-left: 1.92840023%;
+    *margin-right: 1.92840023%;
   }
   #main > h2:first-child {
     border-width: 1px;
@@ -2558,13 +2561,13 @@ h2 .controls a#togglecomments:before {
   .error404 #main {
     display: inline;
     float: left;
-    width: 62.705699545237216%;
-    margin-left: 1.9804835607147224%;
-    margin-right: 1.9804835607147224%;
-    *width: 62.65361621190388%;
-    *margin-left: 1.9284002273813892%;
-    *margin-right: 1.9284002273813892%;
-    margin-left: 18.64715022738139%;
+    width: 62.70569955%;
+    margin-left: 1.98048356%;
+    margin-right: 1.98048356%;
+    *width: 62.65361621%;
+    *margin-left: 1.92840023%;
+    *margin-right: 1.92840023%;
+    margin-left: 18.64715023%;
   }
   #respond {
     padding: 1.618em;
@@ -2573,12 +2576,12 @@ h2 .controls a#togglecomments:before {
   #footer .credit {
     display: inline;
     float: left;
-    width: 96.03903287857055%;
-    margin-left: 1.9804835607147224%;
-    margin-right: 1.9804835607147224%;
-    *width: 95.98694954523722%;
-    *margin-left: 1.9284002273813892%;
-    *margin-right: 1.9284002273813892%;
+    width: 96.03903288%;
+    margin-left: 1.98048356%;
+    margin-right: 1.98048356%;
+    *width: 95.98694955%;
+    *margin-left: 1.92840023%;
+    *margin-right: 1.92840023%;
   }
 }
 /**
@@ -2683,21 +2686,21 @@ h2 .controls a#togglecomments:before {
   .sleeve_main {
     display: inline;
     float: left;
-    width: 71.03903287857055%;
-    margin-left: 1.9804835607147224%;
-    margin-right: 1.9804835607147224%;
-    *width: 70.98694954523722%;
-    *margin-left: 1.9284002273813892%;
-    *margin-right: 1.9284002273813892%;
+    width: 71.03903288%;
+    margin-left: 1.98048356%;
+    margin-right: 1.98048356%;
+    *width: 70.98694955%;
+    *margin-left: 1.92840023%;
+    *margin-right: 1.92840023%;
   }
   #sidebar {
     display: inline;
     float: left;
-    width: 21.039032878570556%;
-    margin-left: 1.9804835607147224%;
-    margin-right: 1.9804835607147224%;
-    *width: 20.986949545237223%;
-    *margin-left: 1.9284002273813892%;
-    *margin-right: 1.9284002273813892%;
+    width: 21.03903288%;
+    margin-left: 1.98048356%;
+    margin-right: 1.98048356%;
+    *width: 20.98694955%;
+    *margin-left: 1.92840023%;
+    *margin-right: 1.92840023%;
   }
 }
