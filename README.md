@@ -9,6 +9,9 @@ Houston makes use of the following resources:
 
 ## Changelog
 
+### Version 1.3.1 - 2014.09.10
+* Fixed Kudos message length bug.
+
 ### Version 1.3.0 - 2013.12.05
 * Styled tables.
 * The post box sidebar is only fixed if it is shorter than the window height.

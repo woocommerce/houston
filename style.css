@@ -860,11 +860,10 @@ table tbody tr:nth-child(2n) td:last-child {
   border-right: 0;
 }
 table tbody td {
-  background: bg_light;
   border-bottom: 1px solid #dfdfdf;
 }
 table tbody td.kudos-message {
-  word-break: break-word;
+  word-break: break-all;
 }
 table tbody h2 {
   font-size: 1em;
