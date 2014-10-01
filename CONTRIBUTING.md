@@ -1,16 +1,8 @@
 # How to contribute
 
-Community made patches, localisations, bug reports and contributions are always welcome and are encouraged to ensure the continued development of Houston.
+Community made patches, localisations, bug reports and contributions are always welcome and are encouraged to ensure the continued development of Apollo.
 
 When contributing please ensure you follow the guidelines below so that we can keep on top of things.
-
-__Note:__
-
-GitHub is for *bug reports and contributions only* - if you have a support question or a request for a customization, don't post here. Use the [WordPress.org Support Forums](http://wordpress.org/support/theme/houston) for community support and for customisations we recommend one of the following services:
-
-- Codeable: http://codeable.io/
-- Tweaky: https://www.tweaky.com/
-- Affiliated Woo Workers: http://www.woothemes.com/affiliated-woo-workers/
 
 ## Getting Started
 

@@ -14,7 +14,7 @@
 <div id="footer">
 	<p class="credit">
 		<?php echo prologue_poweredby_link(); ?>
-	    <?php printf( __( 'Theme: %1$s by %2$s.', 'Houston' ), 'Houston', '<a href="http://woothemes.com/" rel="designer">WooThemes</a>' ); ?>
+	    <?php printf( __( 'Theme: %1$s by %2$s.', 'Apollo' ), 'Apollo', '<a href="http://woothemes.com/" rel="designer">WooThemes</a>' ); ?>
 	</p>
 </div>
 
@@ -22,16 +22,16 @@
 
 <div id="help">
 	<dl class="directions">
-		<dt>c</dt><dd><?php _e( 'compose new post', 'Houston' ); ?></dd>
-		<dt>j</dt><dd><?php _e( 'next post/next comment', 'Houston' ); ?></dd>
-		<dt>k</dt> <dd><?php _e( 'previous post/previous comment', 'Houston' ); ?></dd>
-		<dt>r</dt> <dd><?php _e( 'reply', 'Houston' ); ?></dd>
-		<dt>e</dt> <dd><?php _e( 'edit', 'Houston' ); ?></dd>
-		<dt>o</dt> <dd><?php _e( 'show/hide comments', 'Houston' ); ?></dd>
-		<dt>t</dt> <dd><?php _e( 'go to top', 'Houston' ); ?></dd>
-		<dt>l</dt> <dd><?php _e( 'go to login', 'Houston' ); ?></dd>
-		<dt>h</dt> <dd><?php _e( 'show/hide help', 'Houston' ); ?></dd>
-		<dt><?php _e( 'shift + esc', 'Houston' ); ?></dt> <dd><?php _e( 'cancel', 'Houston' ); ?></dd>
+		<dt>c</dt><dd><?php _e( 'compose new post', 'Apollo' ); ?></dd>
+		<dt>j</dt><dd><?php _e( 'next post/next comment', 'Apollo' ); ?></dd>
+		<dt>k</dt> <dd><?php _e( 'previous post/previous comment', 'Apollo' ); ?></dd>
+		<dt>r</dt> <dd><?php _e( 'reply', 'Apollo' ); ?></dd>
+		<dt>e</dt> <dd><?php _e( 'edit', 'Apollo' ); ?></dd>
+		<dt>o</dt> <dd><?php _e( 'show/hide comments', 'Apollo' ); ?></dd>
+		<dt>t</dt> <dd><?php _e( 'go to top', 'Apollo' ); ?></dd>
+		<dt>l</dt> <dd><?php _e( 'go to login', 'Apollo' ); ?></dd>
+		<dt>h</dt> <dd><?php _e( 'show/hide help', 'Apollo' ); ?></dd>
+		<dt><?php _e( 'shift + esc', 'Apollo' ); ?></dt> <dd><?php _e( 'cancel', 'Apollo' ); ?></dd>
 	</dl>
 </div>
 

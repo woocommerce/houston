@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 add_action( 'widgets_init', 'houston_register_sidebar' );
 function houston_register_sidebar() {
 	register_sidebar( array(
-		'name'          => __( 'Beneath Post Box', 'Houston' ),
+		'name'          => __( 'Beneath Post Box', 'Apollo' ),
 		'id'            => 'beneath-post-box',
 		'description'   => '',
 	    'class'         => '',
@@ -66,7 +66,7 @@ function houston_viewport_meta() {
 
 /**
  * Integrations
- * Include logic that integrates Houston with third party plugins
+ * Include logic that integrates Apollo with third party plugins
  */
 
 /**
