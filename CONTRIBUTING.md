@@ -18,7 +18,7 @@ When contributing please ensure you follow the guidelines below so that we can k
   * **Ensure you stick to the [WordPress Coding Standards](http://codex.wordpress.org/WordPress_Coding_Standards).**
   * Ensure you use LF line endings - no crazy windows line endings. :)
 * When committing, reference your issue (#1234) and include a note about the fix.
-* Push the changes to your fork and submit a pull request on the latest release branch of the Houston repository.
+* Push the changes to your fork and submit a pull request on the latest release branch of the Apollo repository.
   * Release branches start their branch name with `release-`.
 
 At this point you're waiting on us to merge your pull request. We'll review all pull requests, and make suggestions and changes if necessary.
