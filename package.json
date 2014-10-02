@@ -1,0 +1,22 @@
+{
+  "name": "Apollo",
+  "description": "A child theme for P2. A fork of Houston by WooThemes.",
+  "version": "1.4.0",
+  "homepage": "http://hmn.md/",
+  "main": "Gruntfile.js",
+  "author": "Human Made",
+  "license": "GNU General Public License v2 or later",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/humanmade/apollo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/humanmade/apollo/issues"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-compass": "^0.7.2",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+.sass-cache
+.htaccess
+xmlrpc.php
+/node_modules/
+autopull.php
+github.txt
