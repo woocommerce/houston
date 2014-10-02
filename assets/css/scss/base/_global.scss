@@ -414,7 +414,7 @@ button {
   -webkit-border-radius: 0.327em;
   border-radius: 0.327em;
   color: $bg_light;
-  background-color: $green;
+  background-color: $red;
   font-weight: 700;
 }
 input[type="submit"]:hover,
@@ -422,7 +422,7 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 .navigation a:hover,
 button:hover {
-  background-color: #7caf4c;
+  background-color: $red-alt;
   color: $bg_light;
 }
 #wp-posttext-wrap {
@@ -442,7 +442,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #2080ac;
+  color: $red-alt;
 }
 .progress {
   display: none;
@@ -512,7 +512,7 @@ a:hover {
 .header-inner,
 #wrapper,
 #footer {
-  padding: 0 1.618em;
+  padding: 1em 1.618em;
 }
 img.avatar {
   -webkit-border-radius: 3px;
@@ -856,7 +856,7 @@ h2 .controls a#togglecomments:before {
   box-shadow: none;
 }
 .site-navigation .widget_search #searchsubmit:hover {
-  background-color: $green;
+  background-color: $red;
   color: $bg_light;
 }
 .site-navigation .menu li a {
@@ -1600,11 +1600,11 @@ h2 .controls a#togglecomments:before {
   border-left-color: #E6000A !important;
 }
 #main #postlist .hentry.state-resolved {
-  box-shadow: $green 5px 0 0 inset;
-  border-left-color: $green !important;
+  box-shadow: $red 5px 0 0 inset;
+  border-left-color: $red !important;
 }
 #main #postlist .hentry.state-resolved .actions a.p2-resolve-link {
-  background-color: $green !important;
+  background-color: $red !important;
 }
 .p2-resolved-posts-audit-log img {
   width: 16px !important;
@@ -1909,7 +1909,7 @@ h2 .controls a#togglecomments:before {
     left: -584px;
     top: 0;
     height: 100%;
-    background-color: rgba(187, 187, 187, 0.03);
+    background-color: none;
   }
   #postlist .comment.depth-1 .avatar,
   #postlist .comment.depth-2 .avatar,
@@ -2090,7 +2090,7 @@ h2 .controls a#togglecomments:before {
   font-weight: normal !important;
 }
 .ui-menu .ui-menu-item:hover a strong {
-  color: #2080ac !important;
+  color: $red-alt !important;
 }
 .ui-menu .ui-menu-item:nth-child(odd) {
   background: #fafafa !important;
