@@ -40,6 +40,28 @@ function houston_new_nav_menu_items( $items, $args ) {
 }
 add_filter( 'wp_nav_menu_items', 'houston_new_nav_menu_items', 10, 2 );
 
+/**
+ * Add Sass stylesheet
+ */
+function apollo_enqueue_scripts() {
+	
+	$version = ct_get_theme_version();
+	
+	// Styles
+	wp_enqueue_style( 'apollo-styles', get_template_directory_uri() . "/assets/css/theme.css", array(), $version );
+	
+	// Scripts
+	wp_register_script( 'apollo-scripts', get_template_directory_uri() . "/assets/js/theme.js", array( 'jquery', 'p2' ), $version, true );
+	
+	// Localize Script / Data
+	$ct_scripts_data_array = array();
+	$ct_script_data = apply_filters( 'apollo_scripts_data', $ct_scripts_data_array );
+	wp_localize_script( 'apollo-scripts', 'ct_scripts', $ct_script_data );;
+	
+	wp_enqueue_script( 'apollo-scripts' );
+}
+
+add_action( 'wp_enqueue_scripts', 'apollo_enqueue_scripts' );
 
 /**
  * Add js to the frontend
