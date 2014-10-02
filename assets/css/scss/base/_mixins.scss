@@ -6,7 +6,8 @@
 /**
  * Functions
  */
-.iconbefore( @glyph: "\f179" ) {
+@mixin \1(\2\)
+{
 	font-family: "FontAwesome";
 	font-weight: normal;
 	font-style: normal;
@@ -15,10 +16,11 @@
 	width:1.5em;
 	display: inline-block;
 	line-height: 1;
-	content: @glyph;
+	content: $glyph;
 }
 
-.iconafter( @glyph: "\f179" ) {
+@mixin \1(\2\)
+{
 	font-family: "FontAwesome";
 	font-weight: normal;
 	font-style: normal;
@@ -28,10 +30,11 @@
 	display: inline-block;
 	text-align: right;
 	line-height: 1;
-	content: @glyph;
+	content: $glyph;
 }
 
-.ir() {
+@mixin \1(\2\)
+{
 	display: block;
 	text-indent: -9999px;
 	position: relative;
@@ -39,7 +42,8 @@
 	width:1em;
 }
 
-.icon( @glyph: "\f179" ) {
+@mixin \1(\2\)
+{
 	font-family: 'FontAwesome';
 	speak: none;
 	font-weight: normal;
@@ -55,10 +59,11 @@
 	width:100%;
 	height: 100%;
 	text-align: center;
-	content: @glyph;
+	content: $glyph;
 }
 
-.lifted() {
+@mixin \1(\2\)
+{
 	position: relative;
 	&:before, &:after {
 		content: "";
@@ -85,7 +90,8 @@
 	}
 }
 
-.clearfix() {
+@mixin \1(\2\)
+{
 	*zoom:1;
 
 	&:before,
@@ -102,7 +108,8 @@
 /**
  * Objects
  */
-.media() {
+@mixin \1(\2\)
+{
 	.clearfix;
 	img, .img {
 		float: left;
@@ -112,7 +119,8 @@
 	}
 }
 
-.smallcaps() {
+@mixin \1(\2\)
+{
 	text-transform: uppercase;
 	font-size:.844em;
 }
@@ -259,91 +267,104 @@
 /**
  * Mixins
  */
-.border_radius(@radius:.327em) {
-    -webkit-border-radius:@radius;
-    border-radius:@radius;
+@mixin \1(\2\)
+{
+    -webkit-border-radius:$radius;
+    border-radius:$radius;
 }
 
-.border_radius_right(@radius:.327em) {
-    -webkit-border-top-right-radius: @radius;
-    -webkit-border-bottom-right-radius: @radius;
-    border-top-right-radius: @radius;
-    border-bottom-right-radius: @radius;
+@mixin \1(\2\)
+{
+    -webkit-border-top-right-radius: $radius;
+    -webkit-border-bottom-right-radius: $radius;
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
 }
 
-.border_radius_left(@radius:.327em) {
-    -webkit-border-top-left-radius: @radius;
-    -webkit-border-bottom-left-radius: @radius;
-    border-top-left-radius: @radius;
-    border-bottom-left-radius: @radius;
+@mixin \1(\2\)
+{
+    -webkit-border-top-left-radius: $radius;
+    -webkit-border-bottom-left-radius: $radius;
+    border-top-left-radius: $radius;
+    border-bottom-left-radius: $radius;
 }
 
-.border_radius_bottom(@radius:.327em) {
-    -webkit-border-bottom-left-radius: @radius;
-    -webkit-border-bottom-right-radius: @radius;
-    border-bottom-left-radius: @radius;
-    border-bottom-right-radius: @radius;
+@mixin \1(\2\)
+{
+    -webkit-border-bottom-left-radius: $radius;
+    -webkit-border-bottom-right-radius: $radius;
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
 }
 
-.border_radius_top(@radius:.327em) {
-    -webkit-border-top-left-radius: @radius;
-    -webkit-border-top-right-radius: @radius;
-    border-top-left-radius: @radius;
-    border-top-right-radius: @radius;
+@mixin \1(\2\)
+{
+    -webkit-border-top-left-radius: $radius;
+    -webkit-border-top-right-radius: $radius;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
 }
 
-.box_shadow(@shadow_x:3px, @shadow_y:3px, @shadow_rad:3px, @shadow_in:3px, @shadow_color:#888) {
-    -webkit-box-shadow:@shadow_x @shadow_y @shadow_rad @shadow_in @shadow_color;
-    box-shadow:@shadow_x @shadow_y @shadow_rad @shadow_in @shadow_color;
+@mixin \1(\2\)
+{
+    -webkit-box-shadow:$shadow_x $shadow_y $shadow_rad $shadow_in $shadow_color;
+    box-shadow:$shadow_x $shadow_y $shadow_rad $shadow_in $shadow_color;
 }
 
-.inset_box_shadow(@shadow_x:3px, @shadow_y:3px, @shadow_rad:3px, @shadow_in:3px, @shadow_color:#888) {
-    -webkit-box-shadow:inset @shadow_x @shadow_y @shadow_rad @shadow_in @shadow_color;
-    box-shadow:inset @shadow_x @shadow_y @shadow_rad @shadow_in @shadow_color;
+@mixin \1(\2\)
+{
+    -webkit-box-shadow:inset $shadow_x $shadow_y $shadow_rad $shadow_in $shadow_color;
+    box-shadow:inset $shadow_x $shadow_y $shadow_rad $shadow_in $shadow_color;
 }
 
-.vertical_gradient(@from: #000, @to: #FFF) {
-	background: @from;
-    background: -webkit-gradient(linear, left top, left bottom, from(@from), to(@to));
-    background: -webkit-linear-gradient(@from, @to);
-    background: -moz-linear-gradient(center top, @from 0%, @to 100%);
-    background: -moz-gradient(center top, @from 0%, @to 100%);
+@mixin \1(\2\)
+{
+	background: $from;
+    background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+    background: -webkit-linear-gradient($from, $to);
+    background: -moz-linear-gradient(center top, $from 0%, $to 100%);
+    background: -moz-gradient(center top, $from 0%, $to 100%);
 }
 
-.transition(@selector:all, @animation:ease, @duration:.238s) {
-    -webkit-transition:@selector @animation @duration;
-    -moz-transition:@selector @animation @duration;
-    -o-transition:@selector @animation @duration;
-    transition:@selector @animation @duration;
+@mixin \1(\2\)
+{
+    -webkit-transition:$selector $animation $duration;
+    -moz-transition:$selector $animation $duration;
+    -o-transition:$selector $animation $duration;
+    transition:$selector $animation $duration;
 }
 
-.opacity(@opacity:0.75) {
-    filter:~"alpha(opacity=@opacity * 100)";
-    -moz-opacity:@opacity;
-    -khtml-opacity: @opacity;
-    opacity: @opacity;
+@mixin \1(\2\)
+{
+    filter:~"alpha(opacity=$opacity * 100)";
+    -moz-opacity:$opacity;
+    -khtml-opacity: $opacity;
+    opacity: $opacity;
 }
 
-.borderbox() {
+@mixin \1(\2\)
+{
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-.rotate(@degree:1deg) {
-	-webkit-transform: rotate(@degree);  /* Saf3.1+, Chrome */
-	-moz-transform: rotate(@degree);  /* FF3.5+ */
-	-ms-transform: rotate(@degree);  /* IE9 */
-	-o-transform: rotate(@degree);  /* Opera 10.5 */
-	transform: rotate(@degree);
+@mixin \1(\2\)
+{
+	-webkit-transform: rotate($degree);  /* Saf3.1+, Chrome */
+	-moz-transform: rotate($degree);  /* FF3.5+ */
+	-ms-transform: rotate($degree);  /* IE9 */
+	-o-transform: rotate($degree);  /* Opera 10.5 */
+	transform: rotate($degree);
 	zoom: 1;
 }
 
-.scale(@scale:1deg) {
-	-webkit-transform: scale(@scale);  /* Saf3.1+, Chrome */
-	-moz-transform: scale(@scale);  /* FF3.5+ */
-	-ms-transform: scale(@scale);  /* IE9 */
-	-o-transform: scale(@scale);  /* Opera 10.5 */
-	transform: scale(@scale);
+@mixin \1(\2\)
+{
+	-webkit-transform: scale($scale);  /* Saf3.1+, Chrome */
+	-moz-transform: scale($scale);  /* FF3.5+ */
+	-ms-transform: scale($scale);  /* IE9 */
+	-o-transform: scale($scale);  /* Opera 10.5 */
+	transform: scale($scale);
 	zoom: 1;
 }

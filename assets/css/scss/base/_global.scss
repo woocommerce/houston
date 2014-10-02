@@ -1,36 +1,14 @@
-/*
-Theme Name:     Apollo
-Description:    A child theme for P2. A fork of Houston by WooThemes.
-Author:         Human Made
-Author URI: 	http://hmn.md/
-Template:       p2
-Version:        1.4.0
-Tags: 			custom-colors, two-columns, fixed-width, rtl-language-support, right-sidebar, white, light, front-page-post-form, translation-ready, custom-background, custom-header, custom-menu, post-formats, sticky-post, theme-options
-
-
-Apollo WordPress Theme, Copyright 2014 hmn.md
-Apollo is distributed under the terms of the GNU GPL
-
-Apollo makes use of the following resources:
-* FontAwesome Icon font. License: SIL Open Font License (OFL) - http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
-
-*/
-
-@import 'less/grid.less';
-@import 'less/mixins.less';
-@import 'less/normalize.less';
-
 /**
  * Vars
  */
-@woothemes: 	#42a2ce;
-@color_body: 	#4a5151;
-@color_links: 	@woothemes;
-@bg_light: 		#fff;
-@green: 		#8dc05d;
-@red: 			#df8375;
-@color_alt: 	#42a2ce;
-@border_main:	#dfdfdf;
+$woothemes: 	#42a2ce;
+$color_body: 	#4a5151;
+$color_links: 	$woothemes;
+$bg_light: 		#fff;
+$green: 		#8dc05d;
+$red: 			#df8375;
+$color_alt: 	#42a2ce;
+$border_main:	#dfdfdf;
 
 
 /**
@@ -53,7 +31,7 @@ Apollo makes use of the following resources:
 	padding:2.618em;
 	.borderbox;
 	.border_radius;
-	color: @color_body + #222;
+	color: $color_body + #222;
 	.box_shadow(0,.202em,2.244em,0,rgba(0,0,0,0.3));
 	dl.directions {
 		margin:0;
@@ -63,7 +41,7 @@ Apollo makes use of the following resources:
 			clear:left;
 			text-transform: uppercase;
 			background-color: #fff;
-			border-top:1px solid desaturate(@color_body + #a9a9a9,90%);
+			border-top:1px solid desaturate($color_body + #a9a9a9,90%);
 			padding:1.618em;
 			margin-bottom:1em;
 			font-size: .857em;
@@ -72,7 +50,7 @@ Apollo makes use of the following resources:
 			text-align: center;
 			font-weight: 300;
 			-webkit-box-shadow:
-				inset 0 -.382em 0 0 desaturate(@color_body + #a9a9a9,90%),
+				inset 0 -.382em 0 0 desaturate($color_body + #a9a9a9,90%),
 				0 1px 2px rgba(0,0,0,0.3);
 		}
 		dd {
@@ -91,11 +69,11 @@ Apollo makes use of the following resources:
 	padding:1em;
 	display: none;
 	font-size: 1.387em;
-	border-top:.236em solid @woothemes;
+	border-top:.236em solid $woothemes;
 	&:before {
 		.iconbefore;
 		content: "\f05a";
-		color: @woothemes;
+		color: $woothemes;
 	}
 }
 
@@ -121,7 +99,7 @@ html {
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size:1em;
-	color: @color_body;
+	color: $color_body;
 	-webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 	text-rendering: optimizeLegibility;
@@ -130,7 +108,7 @@ body {
 	word-wrap: break-word;
 }
 h1, h2, h3, h4, h5, h6, .alpha, .beta, .gamma, .delta  {
-	color: darken(@color_body, 20%);
+	color: darken($color_body, 20%);
 	margin:0 0 .618em;
 	font-weight: 300;
 	a {
@@ -210,8 +188,8 @@ mark {
 table {
 	border-spacing: 0;
 	width: 100%;
-	border: 1px solid @border_main;
-	background: @bg_light;
+	border: 1px solid $border_main;
+	background: $bg_light;
 	border-collapse: separate;
 	margin-bottom:1.618em;
 	border-radius: 3px;
@@ -230,7 +208,7 @@ table {
 	th {
 		padding: .857em 1em;
 		text-align: left;
-		border-right: 1px dotted @border_main;
+		border-right: 1px dotted $border_main;
 		vertical-align: top;
 
 		p:last-child {
@@ -241,8 +219,8 @@ table {
 	thead {
 		th {
 			background: #fff;
-			border-right: 1px dotted @bg_light - #222;
-			border-bottom: 1px solid @border_main;
+			border-right: 1px dotted $bg_light - #222;
+			border-bottom: 1px solid $border_main;
 			padding: 1em;
 			vertical-align: middle;
 
@@ -266,13 +244,13 @@ table {
 	tbody {
 		th {
 			background: #fff;
-			border-bottom: 1px solid @border_main;
+			border-bottom: 1px solid $border_main;
 		}
 
 		tr:nth-child(2n) {
 			td {
-				background: @bg_light - #040404;
-				border-right: 1px dotted @bg_light - #222;
+				background: $bg_light - #040404;
+				border-right: 1px dotted $bg_light - #222;
 
 				&:last-child {
 					border-right: 0;
@@ -281,7 +259,7 @@ table {
 		}
 
 		td {
-			border-bottom: 1px solid @border_main;
+			border-bottom: 1px solid $border_main;
 		}
 
 		// Kudos plugin
@@ -325,7 +303,7 @@ table {
 	tfoot {
 		th,
 		td {
-			border-top:1px solid @border_main;
+			border-top:1px solid $border_main;
 		}
 	}
 }
@@ -352,7 +330,7 @@ img {
 }
 .wp-caption-text {
 	font-style: italic;
-	color: @bg_light - #555;
+	color: $bg_light - #555;
 }
 .aligncenter {
 	margin:0 auto 1.618em;
@@ -386,24 +364,24 @@ select {
 	max-width:100%;
 }
 input[type="text"], input[type="password"], input[type="email"], input[type="search"], input.input-text, textarea {
-	background-color: @bg_light + #111;
-	border:1px solid @bg_light - #222;
+	background-color: $bg_light + #111;
+	border:1px solid $bg_light - #222;
 	-webkit-appearance:none;
 	padding:.382em;
 	font-family: inherit;
 	font-size:1em;
-	color: @color_body + #222;
+	color: $color_body + #222;
 	.border_radius;
 	width:100%;
 	.transition;
 	.inset_box_shadow(0,1px,2px,0,rgba(0,0,0,0.025));
 	&:active, &:focus {
-		border-color:@woothemes;
+		border-color:$woothemes;
 		-webkit-box-shadow:
-			0 0 .618em fade(@woothemes,50%),
+			0 0 .618em fade($woothemes,50%),
 			inset 0 1px 2px rgba(0,0,0,0.1);
 		box-shadow:
-			0 0 .618em fade(@woothemes,50%),
+			0 0 .618em fade($woothemes,50%),
 			inset 0 1px 2px rgba(0,0,0,0.1);
 	}
 }
@@ -419,12 +397,12 @@ button {
 	text-decoration: none;
 	padding:.857em 1.387em;
 	.border_radius;
-	color: desaturate(@green,20%) + #777;
-	background-color: @green;
+	color: desaturate($green,20%) + #777;
+	background-color: $green;
 	font-weight: 700;
 	&:hover {
-		background-color: @green - #111;
-		color: desaturate(@green,20%) + #777;
+		background-color: $green - #111;
+		color: desaturate($green,20%) + #777;
 	}
 }
 #wp-posttext-wrap {
@@ -440,11 +418,11 @@ button {
  * Style
  */
 a {
-	color: @color_alt;
+	color: $color_alt;
 	font-weight: 700;
 	text-decoration: none;
 	&:hover {
-		color: @color_alt - #222;
+		color: $color_alt - #222;
 	}
 }
 .progress {
@@ -471,19 +449,19 @@ a {
 	padding: 9px 0 13px;
 }
 #header {
-	border-bottom:1px solid @bg_light - #222;
+	border-bottom:1px solid $bg_light - #222;
 	.box_shadow(0,.327em,0,0,rgba(0,0,0,0.05));
 	margin-bottom:2.618em;
 	padding:1.618em 0;
 	position: relative;
-	background-color: @bg_light;
+	background-color: $bg_light;
 	small {
 		display: none;
 	}
 	h1 {
 		margin:0;
 		a {
-			color: @color_body;
+			color: $color_body;
 			font-weight: 700;
 		}
 	}
@@ -494,7 +472,7 @@ a {
 			list-style:none;
 			a {
 				display: block;
-				color: @color_body;
+				color: $color_body;
 				font-weight: 400;
 				text-decoration: none;
 			}
@@ -503,8 +481,8 @@ a {
 	.widget_search {
 		#s {
 			padding:.382em;
-			background-color: @bg_light - #111;
-			border-color:@bg_light - #111;
+			background-color: $bg_light - #111;
+			border-color:$bg_light - #111;
 		}
 		#searchsubmit {
 			border:0;
@@ -534,12 +512,12 @@ img.avatar {
 			.border_radius(0);
 			.inset_box_shadow(0,1px,2px,0,rgba(0,0,0,0.05));
 			padding:1.618em;
-			border:1px solid @bg_light - #222;
+			border:1px solid $bg_light - #222;
 			border-width:1px 0;
 			border-bottom:0;
 			-webkit-appearance:none;
 			margin:0;
-			background-color: darken(@bg_light, 1%);
+			background-color: darken($bg_light, 1%);
 			&:active, &:focus {
 				background-color: #fff;
 			}
@@ -561,7 +539,7 @@ img.avatar {
 		display: none;
 	}
 	#post-prompt {
-		border:1px solid @bg_light - #222;
+		border:1px solid $bg_light - #222;
 		border-width:1px 0;
 		padding-bottom:.618em;
 		.beta;
@@ -574,7 +552,7 @@ img.avatar {
 		&:before {
 			.iconbefore;
 			content: "\f152";
-			color: @color_body + #888;
+			color: $color_body + #888;
 			width:1em;
 			height:1em;
 			line-height: 1;
@@ -583,13 +561,13 @@ img.avatar {
 			margin-right:.236em;
 		}
 		&:hover {
-			background-color: @bg_light;
+			background-color: $bg_light;
 			&:before {
-				color: @color_body;
+				color: $color_body;
 			}
 		}
 		&.active {
-			background-color: @bg_light;
+			background-color: $bg_light;
 			border-width:1px 0 0 0;
 			&:before {
 				.rotate(90deg);
@@ -637,20 +615,20 @@ h2 .controls {
 	font-size:.618em;
 	float: right;
 	font-weight: normal;
-	color: @bg_light - #060606;
+	color: $bg_light - #060606;
 	line-height: 2.344;
 	letter-spacing: -2px;
 	a {
 		font-weight: normal;
-		color: @color_body + #555;
+		color: $color_body + #555;
 		&:hover {
-			color: @color_alt;
+			color: $color_alt;
 		}
 	}
 	a#directions-keyboard, a#togglecomments {
 		.ir;
 		display: inline-block;
-		background-color: @bg_light + #111;
+		background-color: $bg_light + #111;
 		padding:.53em;
 		.border_radius;
 		border:1px solid transparent;
@@ -689,7 +667,7 @@ h2 .controls {
 			.icon;
 			content: "\f0c9";
 			font-size: 1.618em;
-			color: @color_body;
+			color: $color_body;
 		}
 	}
 	.widget_search {
@@ -703,7 +681,7 @@ h2 .controls {
 		}
 		#searchsubmit {
 			&:hover {
-				background-color: @green;
+				background-color: $green;
 				color: #fff;
 			}
 		}
@@ -724,8 +702,8 @@ h2 .controls {
 	> h2:first-child {
 		margin:0 -1.618rem;
 		padding:1rem 1.618rem;
-		background-color: @bg_light;
-		border:1px solid @bg_light - #222;
+		background-color: $bg_light;
+		border:1px solid $bg_light - #222;
 		border-width:1px 0;
 	}
 }
@@ -746,7 +724,7 @@ h2 .controls {
 		left:50%;
 		height: 100%;
 		width:1px;
-		background-color: @bg_light - #1a1a1a;
+		background-color: $bg_light - #1a1a1a;
 		z-index: -2;
 	}
 	li.post, li.comment {
@@ -780,7 +758,7 @@ h2 .controls {
 		margin-bottom:1.618em;
 		padding:1.618em;
 		padding-bottom:0;
-		border:1px solid @bg_light - #222;
+		border:1px solid $bg_light - #222;
 		border-width:1px 0;
 		position: relative;
 		background: #fff;
@@ -862,13 +840,13 @@ h2 .controls {
 			}
 		}
 		button:nth-child(3n) {
-			background-color: @color_body;
+			background-color: $color_body;
 			&:before {
 				.iconbefore;
 				content: "\f05c";
 			}
 			&:hover {
-				background-color: @color_body - #111;
+				background-color: $color_body - #111;
 			}
 			&:hover:before {
 				background-color: none;
@@ -876,7 +854,7 @@ h2 .controls {
 		}
 	}
 	.post ul.inlinecomments, .type-page ul.inlinecomments {
-		background-color: fade(@bg_light - #111,15%);
+		background-color: fade($bg_light - #111,15%);
 		margin-left:0;
 		.border_radius_bottom;
 		padding-left:71px;
@@ -884,7 +862,7 @@ h2 .controls {
 		margin-right:-1.618em;
 		.meta {
 			.actions, .p2-likes-post, a.p2-likes-link {
-				color: darken(@bg_light,2%);
+				color: darken($bg_light,2%);
 			}
 		}
 		li {
@@ -912,9 +890,9 @@ h2 .controls {
 	}
 	blockquote {
 		font-style: italic;
-		color: @color_body + #222;
+		color: $color_body + #222;
 		padding-left:1.618em;
-		border-left:2px solid @bg_light - #222;
+		border-left:2px solid $bg_light - #222;
 	}
 	.comment.depth-1, .comment.depth-2, .comment.depth-3, .comment.depth-4, .comment.depth-5, .discussion {
 		padding-bottom:0;
@@ -923,7 +901,7 @@ h2 .controls {
 			content: "";
 			display: block;
 			height:1px;
-			border-top:1px solid @bg_light - #1a1a1a;
+			border-top:1px solid $bg_light - #1a1a1a;
 			position: absolute;
 			top:0;
 			left:-400px;
@@ -958,13 +936,13 @@ h2 .controls {
 			a.show-comments {
 				display: block;
 				padding:.53em 1em;
-				background-color: darken(@bg_light,2%);
+				background-color: darken($bg_light,2%);
 				margin-top:.618em;
 				text-align: center;
-				color: @color_body + #333;
-				border-top:1px dotted @bg_light - #222;
+				color: $color_body + #333;
+				border-top:1px dotted $bg_light - #222;
 				&:hover {
-					color: @color_body;
+					color: $color_body;
 				}
 			}
 		}
@@ -979,12 +957,12 @@ h2 .controls {
 		abbr {
 			font-weight: normal;
 			border:0;
-			color: @color_body + #555;
+			color: $color_body + #555;
 			font-size:.857em;
 			em {
 				display: inline-block;
 				text-indent: -999px;
-				border-right:1px solid @bg_light - #222;
+				border-right:1px solid $bg_light - #222;
 				margin:0 .327em;
 			}
 		}
@@ -992,7 +970,7 @@ h2 .controls {
 			font-size:.857em;
 			font-weight: normal;
 			display: inline-block;
-			color: @color_body + #555;
+			color: $color_body + #555;
 			padding-left:.618em;
 			br {
 				display: none;
@@ -1001,7 +979,7 @@ h2 .controls {
 		.actions {
 			display: inline-block;
 			font-weight: normal;
-			color: @bg_light + #111;
+			color: $bg_light + #111;
 			float: right;
 			font-size: .857em;
 			position: absolute;
@@ -1010,20 +988,20 @@ h2 .controls {
 			.thepermalink, .comment-reply-link, .edit-post-link, .p2-likes-like, .comment-edit-link {
 				.ir;
 				display: inline-block;
-				color: @color_links;
+				color: $color_links;
 				//margin-right:.236em;
 				width:1.618em;
 				height:1.618em;
 				&:before {
 					.icon;
-					color: @color_body + #888;
+					color: $color_body + #888;
 					height:1.618em;
 					width:1.618em;
 					line-height: 1.618;
 				}
 				&:hover {
 					&:before {
-						color: @color_body;
+						color: $color_body;
 					}
 				}
 			}
@@ -1045,8 +1023,8 @@ h2 .controls {
 		}
 		.p2-likes-count {
 			font-size:.857em;
-			color: @bg_light + #111;
-			background:@color_body + #888;
+			color: $bg_light + #111;
+			background:$color_body + #888;
 			display: inline-block;
 			width:1.618em;
 			height:1.387em;
@@ -1060,24 +1038,24 @@ h2 .controls {
 			&:after {
 				content: "";
 				display: block;
-				border:.5em solid @color_body + #888;
-				border-color:transparent @color_body + #888 transparent transparent;
+				border:.5em solid $color_body + #888;
+				border-color:transparent $color_body + #888 transparent transparent;
 				position: absolute;
 				top:.25em;
 				left:-.75em;
 			}
 		}
 		.p2-likes-post, a.p2-likes-link {
-			color: @bg_light + #111;
+			color: $bg_light + #111;
 			position: relative;
 			&:hover {
 				.p2-likes-like:before {
-					color: @color_body;
+					color: $color_body;
 				}
 				.p2-likes-count {
-					background-color: @color_body;
+					background-color: $color_body;
 					&:after {
-						border-color:transparent @color_body transparent transparent;
+						border-color:transparent $color_body transparent transparent;
 					}
 				}
 			}
@@ -1091,7 +1069,7 @@ h2 .controls {
 	.clearfix;
 	margin-bottom:1.618em;
 	padding-top:1.618em;
-	border-top:1px solid @bg_light - #222;
+	border-top:1px solid $bg_light - #222;
 	.nav-older {
 		float: left;
 	}
@@ -1108,7 +1086,7 @@ h2 .controls {
 }
 // Widgets
 .widget {
-	color: @color_body + #555;
+	color: $color_body + #555;
 	margin-bottom:2.618em;
 	ul {
 		margin-left:0;
@@ -1116,8 +1094,8 @@ h2 .controls {
 		list-style-type: none;
 	}
 	a {
-		color: @color_body + #333;
-		border-bottom:1px dotted @bg_light - #222;
+		color: $color_body + #333;
+		border-bottom:1px dotted $bg_light - #222;
 		&:hover {
 			border-bottom-style:solid;
 		}
@@ -1171,7 +1149,7 @@ h2 .controls {
 		content: "";
 		display: block;
 		height:1px;
-		border-top:1px solid @bg_light - #222;
+		border-top:1px solid $bg_light - #222;
 		position: absolute;
 		top:0;
 		left:-80%;
@@ -1183,7 +1161,7 @@ h2 .controls {
 		#cancel-comment-reply-link {
 			float: right;
 			.ir;
-			color: @red;
+			color: $red;
 			&:before {
 				.icon;
 				content: "\f05c";
@@ -1238,7 +1216,7 @@ h2 .controls {
 #footer {
 	.credit {
 		padding:1.618em 0;
-		border-top:1px solid @bg_light - #222;
+		border-top:1px solid $bg_light - #222;
 	}
 }
 
@@ -1253,20 +1231,20 @@ h2 .controls {
 	.meta .actions .state-normal {
 		.ir;
 		display: inline-block;
-		color: @color_links;
+		color: $color_links;
 		//margin-right:.236em;
 		width:1.618em;
 		height:1.618em;
 		&:before {
 			.icon;
-			color: @color_body + #888;
+			color: $color_body + #888;
 			height:1.618em;
 			width:1.618em;
 			line-height: 1.618;
 		}
 		&:hover {
 			&:before {
-				color: @color_body;
+				color: $color_body;
 			}
 		}
 	}
@@ -1403,8 +1381,8 @@ h2 .controls {
 					padding:1.15em 1em;
 					font-size:1em;
 					&:hover {
-						color: @bg_light;
-						background-color: @color_links - #0a0a0a;
+						color: $bg_light;
+						background-color: $color_links - #0a0a0a;
 					}
 				}
 			}
@@ -1417,8 +1395,8 @@ h2 .controls {
 				position: relative;
 				&:hover {
 					> a {
-						color: @bg_light;
-						background-color: @color_links - #0a0a0a;
+						color: $bg_light;
+						background-color: $color_links - #0a0a0a;
 					}
 					> .sub-menu {
 						.opacity(1);
@@ -1436,7 +1414,7 @@ h2 .controls {
 				width:15.379em;
 				padding:0;
 				margin:0;
-				background: @color_links - #0a0a0a;
+				background: $color_links - #0a0a0a;
 				.opacity(0);
 				visibility:hidden;
 				.transition;
@@ -1458,7 +1436,7 @@ h2 .controls {
 				}
 				a {
 					display: block;
-					color: @bg_light;
+					color: $bg_light;
 					.transition;
 					-webkit-transform:translateZ(0);
 					&:hover {
@@ -1528,7 +1506,7 @@ h2 .controls {
 		.comment.depth-1, .comment.depth-2, .comment.depth-3, .comment.depth-4, .comment.depth-5, .discussion {
 			padding-left:0;
 			position: relative;
-			//.box_shadow(-20em,0,0,0,fade(@bg_light - #111,10%));
+			//.box_shadow(-20em,0,0,0,fade($bg_light - #111,10%));
 			&:after {
 				content: "";
 				display: block;
@@ -1537,7 +1515,7 @@ h2 .controls {
 				left:-584px;
 				top:0;
 				height:100%;
-				background-color: fade(@bg_light - #444,3%);
+				background-color: fade($bg_light - #444,3%);
 			}
 			.avatar {
 				margin-left:0;
@@ -1609,9 +1587,9 @@ h2 .controls {
  * Autocomplete
  */
 .ui-menu {
-	background: @bg_light;
+	background: $bg_light;
 	.borderbox;
-	border-color:@bg_light - #222 !important;
+	border-color:$bg_light - #222 !important;
 	padding:0;
 	.border_radius;
 	border: 0 !important;
@@ -1644,27 +1622,27 @@ h2 .controls {
 	}
 	&:hover {
 		a strong {
-			color: @color_links - #222 !important;
+			color: $color_links - #222 !important;
 		}
 	}
 }
 .ui-menu .ui-menu-item:nth-child(odd) {
-	background: darken(@bg_light,2%) !important;
+	background: darken($bg_light,2%) !important;
 }
 
 .ui-menu .ui-menu-item {
 	&:hover {
-		background-color: @color_links !important;
+		background-color: $color_links !important;
 		a, a strong {
-			color: @bg_light !important;
+			color: $bg_light !important;
 		}
 	}
 }
 
 .ui-menu .ui-menu-item a {
-	color: @color_body !important;
+	color: $color_body !important;
 	strong {
-		color: @color_links !important;
+		color: $color_links !important;
 	}
 }
 
