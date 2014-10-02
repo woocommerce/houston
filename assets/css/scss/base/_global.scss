@@ -1,586 +1,3 @@
-.icon_button {
-  text-indent: -999em;
-  position: relative;
-  display: block;
-  padding: 0;
-  height: 2.369em;
-  width: 2.369em;
-  font-size: 1em;
-  font-weight: normal;
-}
-.icon_button:after {
-  font-family: "FontAwesome";
-  content: "\f118";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  text-indent: 0;
-  line-height: 2.369;
-}
-.icon_date {
-  display: inline;
-}
-.icon_date:before {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  line-height: 1;
-  content: "\f179";
-  content: "\f133";
-}
-.icon_external {
-  display: inline-block;
-}
-.icon_external:after {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  text-align: right;
-  line-height: 1;
-  content: "\f179";
-  content: "\f08e";
-}
-.icon_video:before {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  line-height: 1;
-  content: "\f179";
-  content: "\f03d";
-}
-.icon_status:before {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  line-height: 1;
-  content: "\f179";
-  content: "\f0e7";
-}
-.icon_audio:before {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  line-height: 1;
-  content: "\f179";
-  content: "\f025";
-}
-.icon_comment:before {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  line-height: 1;
-  content: "\f179";
-  content: "\f075";
-}
-.icon_link:before {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  line-height: 1;
-  content: "\f179";
-  content: "\f0c1";
-}
-.icon_folder:before {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  line-height: 1;
-  content: "\f179";
-  content: "\f07b";
-}
-.icon_tag:before {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  line-height: 1;
-  content: "\f179";
-  content: "\f02b";
-}
-.icon_post:before {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  line-height: 1;
-  content: "\f179";
-  content: "\f0f6";
-}
-.icon_edit:before {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  line-height: 1;
-  content: "\f179";
-  content: "\f040";
-}
-.icon_archive:before {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  line-height: 1;
-  content: "\f179";
-  content: "\f115";
-}
-.icon_category:before {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  line-height: 1;
-  content: "\f179";
-  content: "\f114";
-}
-.icon_page:before {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  line-height: 1;
-  content: "\f179";
-  content: "\f0f6";
-}
-.icon_comment:before {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  line-height: 1;
-  content: "\f179";
-  content: "\f0e5";
-}
-.icon_post:before {
-  font-family: "FontAwesome";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  speak: none;
-  width: 1.5em;
-  display: inline-block;
-  line-height: 1;
-  content: "\f179";
-  content: "\f016";
-}
-/**
- * Mixins
- */
-/*! normalize.css v2.1.1 | MIT License | git.io/normalize */
-/* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-/**
- * Correct `inline-block` display not defined in IE 8/9.
- */
-audio,
-canvas,
-video {
-  display: inline-block;
-}
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-/**
- * Address styling not present in IE 8/9.
- */
-[hidden] {
-  display: none;
-}
-/* ==========================================================================
-   Base
-   ========================================================================== */
-/**
- * 1. Prevent system color scheme's background color being used in Firefox, IE,
- *    and Opera.
- * 2. Prevent system color scheme's text color being used in Firefox, IE, and
- *    Opera.
- * 3. Set default font family to sans-serif.
- * 4. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-html {
-  background: #fff;
-  /* 1 */
-
-  color: #000;
-  /* 2 */
-
-  font-family: sans-serif;
-  /* 3 */
-
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  /* 4 */
-
-}
-/**
- * Remove default margin.
- */
-body {
-  margin: 0;
-}
-/* ==========================================================================
-   Links
-   ========================================================================== */
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-a:focus {
-  outline: thin dotted;
-}
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-a:active,
-a:hover {
-  outline: 0;
-}
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-b,
-strong {
-  font-weight: bold;
-}
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-dfn {
-  font-style: italic;
-}
-/**
- * Address differences between Firefox and other browsers.
- */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-/**
- * Address styling not present in IE 8/9.
- */
-mark {
-  background: #ff0;
-  color: #000;
-}
-/**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-pre {
-  white-space: pre-wrap;
-}
-/**
- * Set consistent quote types.
- */
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-/* ==========================================================================
-   Embedded content
-   ========================================================================== */
-/**
- * Remove border when inside `a` element in IE 8/9.
- */
-img {
-  border: 0;
-}
-/**
- * Correct overflow displayed oddly in IE 9.
- */
-svg:not(:root) {
-  overflow: hidden;
-}
-/* ==========================================================================
-   Figures
-   ========================================================================== */
-/**
- * Address margin not present in IE 8/9 and Safari 5.
- */
-figure {
-  margin: 0;
-}
-/* ==========================================================================
-   Forms
-   ========================================================================== */
-/**
- * Define consistent border, margin, and padding.
- */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-/**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-legend {
-  border: 0;
-  /* 1 */
-
-  padding: 0;
-  /* 2 */
-
-}
-/**
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
- */
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-
-  font-size: 100%;
-  /* 2 */
-
-  margin: 0;
-  /* 3 */
-
-}
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-button,
-input {
-  line-height: normal;
-}
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
- * Correct `select` style inheritance in Firefox 4+ and Opera.
- */
-button,
-select {
-  text-transform: none;
-}
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-
-  cursor: pointer;
-  /* 3 */
-
-}
-/**
- * Re-set default cursor for disabled elements.
- */
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-/**
- * 1. Address box sizing set to `content-box` in IE 8/9.
- * 2. Remove excess padding in IE 8/9.
- */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-
-  padding: 0;
-  /* 2 */
-
-}
-/**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
-
-  box-sizing: content-box;
-}
-/**
- * Remove inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
- */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-/**
- * 1. Remove default vertical scrollbar in IE 8/9.
- * 2. Improve readability and alignment in all browsers.
- */
-textarea {
-  overflow: auto;
-  /* 1 */
-
-  vertical-align: top;
-  /* 2 */
-
-}
-/* ==========================================================================
-   Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/**
- * Vars
- */
 /**
  * Helpers
  */
@@ -622,7 +39,7 @@ table {
   float: left;
   clear: left;
   text-transform: uppercase;
-  background-color: #fff;
+  background-color: $bg_light;
   border-top: 1px solid #f6f6f6;
   padding: 1.618em;
   margin-bottom: 1em;
@@ -656,7 +73,7 @@ table {
   padding: 1em;
   display: none;
   font-size: 1.387em;
-  border-top: 0.236em solid #42a2ce;
+  border-top: 0.236em solid $color_links;
 }
 #notify:before {
   font-family: "FontAwesome";
@@ -669,15 +86,15 @@ table {
   line-height: 1;
   content: "\f179";
   content: "\f05a";
-  color: #42a2ce;
+  color: $color_links;
 }
 /**
  * Setup / Typography
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('fonts/fontawesome-webfont.eot?v=3.2.1');
-  src: url('fonts/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('fonts/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+  src: url('../../fonts/fontawesome-webfont.eot?v=3.2.1');
+  src: url('../../fonts/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../../fonts/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('../../fonts/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('../../fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -689,7 +106,7 @@ html {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
-  color: #4a5151;
+  color: $color_body;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
@@ -797,8 +214,8 @@ mark {
 table {
   border-spacing: 0;
   width: 100%;
-  border: 1px solid #dfdfdf;
-  background: #ffffff;
+  border: 1px solid $border_main;
+  background: $bg_light;
   border-collapse: separate;
   margin-bottom: 1.618em;
   border-radius: 3px;
@@ -815,7 +232,7 @@ table td,
 table th {
   padding: .857em 1em;
   text-align: left;
-  border-right: 1px dotted #dfdfdf;
+  border-right: 1px dotted $border_main;
   vertical-align: top;
 }
 table td p:last-child,
@@ -823,9 +240,9 @@ table th p:last-child {
   margin-bottom: 0;
 }
 table thead th {
-  background: #fff;
+  background: $bg_light;
   border-right: 1px dotted #dddddd;
-  border-bottom: 1px solid #dfdfdf;
+  border-bottom: 1px solid $border_main;
   padding: 1em;
   vertical-align: middle;
 }
@@ -840,8 +257,8 @@ table tr td:last-child {
   border-right: 0;
 }
 table tbody th {
-  background: #fff;
-  border-bottom: 1px solid #dfdfdf;
+  background: $bg_light;
+  border-bottom: 1px solid $border_main;
 }
 table tbody tr:nth-child(2n) td {
   background: #fbfbfb;
@@ -851,7 +268,7 @@ table tbody tr:nth-child(2n) td:last-child {
   border-right: 0;
 }
 table tbody td {
-  border-bottom: 1px solid #dfdfdf;
+  border-bottom: 1px solid $border_main;
 }
 table tbody td.kudos-message {
   word-break: break-all;
@@ -880,7 +297,7 @@ table tfoot:last-child tr:last-child td:last-child {
 }
 table tfoot th,
 table tfoot td {
-  border-top: 1px solid #dfdfdf;
+  border-top: 1px solid $border_main;
 }
 /**
  * Images
@@ -950,7 +367,7 @@ input[type="email"],
 input[type="search"],
 input.input-text,
 textarea {
-  background-color: #ffffff;
+  background-color: $bg_light;
   border: 1px solid #dddddd;
   -webkit-appearance: none;
   padding: .382em;
@@ -979,7 +396,7 @@ input[type="email"]:focus,
 input[type="search"]:focus,
 input.input-text:focus,
 textarea:focus {
-  border-color: #42a2ce;
+  border-color: $color_links;
   -webkit-box-shadow: 0 0 0.618em rgba(66, 162, 206, 0.5), inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 0.618em rgba(66, 162, 206, 0.5), inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -996,8 +413,8 @@ button {
   padding: .857em 1.387em;
   -webkit-border-radius: 0.327em;
   border-radius: 0.327em;
-  color: #ffffeb;
-  background-color: #8dc05d;
+  color: $bg_light;
+  background-color: $green;
   font-weight: 700;
 }
 input[type="submit"]:hover,
@@ -1006,7 +423,7 @@ input[type="button"]:hover,
 .navigation a:hover,
 button:hover {
   background-color: #7caf4c;
-  color: #ffffeb;
+  color: $bg_light;
 }
 #wp-posttext-wrap {
   clear: both;
@@ -1014,13 +431,13 @@ button:hover {
   margin-bottom: 1em;
 }
 .mceIframeContainer {
-  background-color: #fff;
+  background-color: $bg_light;
 }
 /**
  * Style
  */
 a {
-  color: #42a2ce;
+  color: $color_links;
   font-weight: 700;
   text-decoration: none;
 }
@@ -1057,7 +474,7 @@ a:hover {
   margin-bottom: 2.618em;
   padding: 1.618em 0;
   position: relative;
-  background-color: #ffffff;
+  background-color: $bg_light;
 }
 #header small {
   display: none;
@@ -1066,7 +483,7 @@ a:hover {
   margin: 0;
 }
 #header h1 a {
-  color: #4a5151;
+  color: $color_body;
   font-weight: 700;
 }
 #header .menu {
@@ -1078,7 +495,7 @@ a:hover {
 }
 #header .menu li a {
   display: block;
-  color: #4a5151;
+  color: $color_body;
   font-weight: 400;
   text-decoration: none;
 }
@@ -1141,7 +558,7 @@ img.avatar {
 #postbox #new_post input#tags:active,
 #postbox #new_post textarea:focus,
 #postbox #new_post input#tags:focus {
-  background-color: #fff;
+  background-color: $bg_light;
 }
 #postbox #new_post input[type=submit] {
   -webkit-border-radius: 0;
@@ -1203,13 +620,13 @@ img.avatar {
   margin-right: .236em;
 }
 #postbox #post-prompt:hover {
-  background-color: #ffffff;
+  background-color: $bg_light;
 }
 #postbox #post-prompt:hover:before {
-  color: #4a5151;
+  color: $color_body;
 }
 #postbox #post-prompt.active {
-  background-color: #ffffff;
+  background-color: $bg_light;
   border-width: 1px 0 0 0;
 }
 #postbox #post-prompt.active:before {
@@ -1334,7 +751,7 @@ h2 .controls a {
   color: #9fa6a6;
 }
 h2 .controls a:hover {
-  color: #42a2ce;
+  color: $color_links;
 }
 h2 .controls a#directions-keyboard,
 h2 .controls a#togglecomments {
@@ -1344,7 +761,7 @@ h2 .controls a#togglecomments {
   height: 1em;
   width: 1em;
   display: inline-block;
-  background-color: #ffffff;
+  background-color: $bg_light;
   padding: .53em;
   -webkit-border-radius: 0.327em;
   border-radius: 0.327em;
@@ -1427,7 +844,7 @@ h2 .controls a#togglecomments:before {
   content: "\f179";
   content: "\f0c9";
   font-size: 1.618em;
-  color: #4a5151;
+  color: $color_body;
 }
 .site-navigation .widget_search {
   padding: 1em 0;
@@ -1439,8 +856,8 @@ h2 .controls a#togglecomments:before {
   box-shadow: none;
 }
 .site-navigation .widget_search #searchsubmit:hover {
-  background-color: #8dc05d;
-  color: #fff;
+  background-color: $green;
+  color: $bg_light;
 }
 .site-navigation .menu li a {
   padding: .236em 0;
@@ -1451,7 +868,7 @@ h2 .controls a#togglecomments:before {
 #main > h2:first-child {
   margin: 0 -1.618rem;
   padding: 1rem 1.618rem;
-  background-color: #ffffff;
+  background-color: $bg_light;
   border: 1px solid #dddddd;
   border-width: 1px 0;
 }
@@ -1517,7 +934,7 @@ h2 .controls a#togglecomments:before {
   border: 1px solid #dddddd;
   border-width: 1px 0;
   position: relative;
-  background: #fff;
+  background: $bg_light;
 }
 #postlist > li.post:before,
 #postlist li.type-page:before {
@@ -1528,7 +945,7 @@ h2 .controls a#togglecomments:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: $bg_light;
   z-index: -1;
 }
 #postlist > li.post:first-child,
@@ -1636,7 +1053,7 @@ h2 .controls a#togglecomments:before {
 }
 #postlist .buttons button:nth-child(3n),
 #postlist form.textedit button:nth-child(3n) {
-  background-color: #4a5151;
+  background-color: $color_body;
 }
 #postlist .buttons button:nth-child(3n):before,
 #postlist form.textedit button:nth-child(3n):before {
@@ -1690,8 +1107,8 @@ h2 .controls a#togglecomments:before {
 #postlist .post ul.inlinecomments .avatar,
 #postlist .type-page ul.inlinecomments .avatar {
   width: 16px;
-  -webkit-box-shadow: 0 0 0 0.236em #ffffff;
-  box-shadow: 0 0 0 0.236em #ffffff;
+  -webkit-box-shadow: 0 0 0 0.236em $bg_light;
+  box-shadow: 0 0 0 0.236em $bg_light;
 }
 #postlist .post ul.inlinecomments h4,
 #postlist .type-page ul.inlinecomments h4,
@@ -1789,7 +1206,7 @@ h2 .controls a#togglecomments:before {
   border-top: 1px dotted #dddddd;
 }
 #postlist .discussion p a.show-comments:hover {
-  color: #4a5151;
+  color: $color_body;
 }
 #postlist .commentcontent p:last-child {
   margin-bottom: 0;
@@ -1822,7 +1239,7 @@ h2 .controls a#togglecomments:before {
 #postlist .meta .actions {
   display: inline-block;
   font-weight: normal;
-  color: #ffffff;
+  color: $bg_light;
   float: right;
   font-size: .857em;
   position: absolute;
@@ -1840,7 +1257,7 @@ h2 .controls a#togglecomments:before {
   height: 1em;
   width: 1em;
   display: inline-block;
-  color: #42a2ce;
+  color: $color_links;
   width: 1.618em;
   height: 1.618em;
 }
@@ -1875,7 +1292,7 @@ h2 .controls a#togglecomments:before {
 #postlist .meta .actions .edit-post-link:hover:before,
 #postlist .meta .actions .p2-likes-like:hover:before,
 #postlist .meta .actions .comment-edit-link:hover:before {
-  color: #4a5151;
+  color: $color_body;
 }
 #postlist .meta .actions .thepermalink:before {
   content: "\f0c1";
@@ -1895,7 +1312,7 @@ h2 .controls a#togglecomments:before {
 }
 #postlist .meta .p2-likes-count {
   font-size: .857em;
-  color: #ffffff;
+  color: $bg_light;
   background: #d2d9d9;
   display: inline-block;
   width: 1.618em;
@@ -1920,20 +1337,20 @@ h2 .controls a#togglecomments:before {
 }
 #postlist .meta .p2-likes-post,
 #postlist .meta a.p2-likes-link {
-  color: #ffffff;
+  color: $bg_light;
   position: relative;
 }
 #postlist .meta .p2-likes-post:hover .p2-likes-like:before,
 #postlist .meta a.p2-likes-link:hover .p2-likes-like:before {
-  color: #4a5151;
+  color: $color_body;
 }
 #postlist .meta .p2-likes-post:hover .p2-likes-count,
 #postlist .meta a.p2-likes-link:hover .p2-likes-count {
-  background-color: #4a5151;
+  background-color: $color_body;
 }
 #postlist .meta .p2-likes-post:hover .p2-likes-count:after,
 #postlist .meta a.p2-likes-link:hover .p2-likes-count:after {
-  border-color: transparent #4a5151 transparent transparent;
+  border-color: transparent $color_body transparent transparent;
 }
 #postlist .meta .p2-likes-user {
   background-color: transparent;
@@ -1980,7 +1397,7 @@ h2 .controls a#togglecomments:before {
   border-bottom-style: solid;
 }
 .widget a.button {
-  color: #fff;
+  color: $bg_light;
   border: 0;
 }
 .searchform {
@@ -2069,7 +1486,7 @@ h2 .controls a#togglecomments:before {
   position: relative;
   height: 1em;
   width: 1em;
-  color: #df8375;
+  color: $red;
 }
 #respond .comment-reply-title #cancel-comment-reply-link:before {
   font-family: 'FontAwesome';
@@ -2115,7 +1532,7 @@ h2 .controls a#togglecomments:before {
   margin: 0;
   border: 1px solid #dddddd;
   border-width: 0 1px;
-  background-color: #fff;
+  background-color: $bg_light;
 }
 .error404 #main .searchform {
   border-bottom-width: 1px;
@@ -2139,7 +1556,7 @@ h2 .controls a#togglecomments:before {
   height: 1em;
   width: 1em;
   display: inline-block;
-  color: #42a2ce;
+  color: $color_links;
   width: 1.618em;
   height: 1.618em;
 }
@@ -2166,7 +1583,7 @@ h2 .controls a#togglecomments:before {
   line-height: 1.618;
 }
 #main #postlist .meta .actions .state-normal:hover:before {
-  color: #4a5151;
+  color: $color_body;
 }
 #main #postlist li.hentry .actions a.state-normal:hover {
   background-color: transparent !important;
@@ -2183,11 +1600,11 @@ h2 .controls a#togglecomments:before {
   border-left-color: #E6000A !important;
 }
 #main #postlist .hentry.state-resolved {
-  box-shadow: #8dc05d 5px 0 0 inset;
-  border-left-color: #8dc05d !important;
+  box-shadow: $green 5px 0 0 inset;
+  border-left-color: $green !important;
 }
 #main #postlist .hentry.state-resolved .actions a.p2-resolve-link {
-  background-color: #8dc05d !important;
+  background-color: $green !important;
 }
 .p2-resolved-posts-audit-log img {
   width: 16px !important;
@@ -2312,7 +1729,7 @@ h2 .controls a#togglecomments:before {
     font-size: 1em;
   }
   #header .menu li a:hover {
-    color: #ffffff;
+    color: $bg_light;
     background-color: #3898c4;
   }
   #header .site-navigation {
@@ -2332,7 +1749,7 @@ h2 .controls a#togglecomments:before {
     position: relative;
   }
   #header .site-navigation li:hover > a {
-    color: #ffffff;
+    color: $bg_light;
     background-color: #3898c4;
   }
   #header .site-navigation li:hover > .sub-menu {
@@ -2393,7 +1810,7 @@ h2 .controls a#togglecomments:before {
   }
   #header .site-navigation .sub-menu a {
     display: block;
-    color: #ffffff;
+    color: $bg_light;
     -webkit-transition: all ease 0.238s;
     -moz-transition: all ease 0.238s;
     -o-transition: all ease 0.238s;
@@ -2547,7 +1964,7 @@ h2 .controls a#togglecomments:before {
     border-width: 1px;
     -webkit-border-radius: 0.327em;
     border-radius: 0.327em;
-    background: #fff;
+    background: $bg_light;
   }
   #postbox #post-prompt.active {
     border-width: 1px 1px 0 1px;
@@ -2607,7 +2024,7 @@ h2 .controls a#togglecomments:before {
  * Autocomplete
  */
 .ui-menu {
-  background: #ffffff;
+  background: $bg_light;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
 
@@ -2679,17 +2096,17 @@ h2 .controls a#togglecomments:before {
   background: #fafafa !important;
 }
 .ui-menu .ui-menu-item:hover {
-  background-color: #42a2ce !important;
+  background-color: $color_links !important;
 }
 .ui-menu .ui-menu-item:hover a,
 .ui-menu .ui-menu-item:hover a strong {
-  color: #ffffff !important;
+  color: $bg_light !important;
 }
 .ui-menu .ui-menu-item a {
-  color: #4a5151 !important;
+  color: $color_body !important;
 }
 .ui-menu .ui-menu-item a strong {
-  color: #42a2ce !important;
+  color: $color_links !important;
 }
 .ui-menu .ui-menu-item a.ui-state-hover,
 .ui-menu .ui-menu-item a.ui-state-focus,
