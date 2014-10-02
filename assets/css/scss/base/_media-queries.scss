@@ -1,6 +1,6 @@
-$mixin bp( $point ) {
+@mixin bp( $point ) {
 	
-	$if ( $MQs ) {
+	@if ( $MQs ) {
 		
 		$bp-small: "(min-width: 640px)";
 		$bp-medium: "(min-width: 1024px)";
@@ -10,29 +10,29 @@ $mixin bp( $point ) {
 		$bp-medium-max: "(max-width: 1024px)";
 		$bp-large-max: "(max-width: 1600px)";
 
-		$if $point == small {
-			@media #{$bp-small} { $content; }
+		@if $point == small {
+			@media #{$bp-small} { @content; }
 		}
-		$else if $point == medium {
-			@media #{$bp-medium} { $content; }
+		@else if $point == medium {
+			@media #{$bp-medium} { @content; }
 		}
-		$else if $point == large {
-			@media #{$bp-large}  { $content; }
+		@else if $point == large {
+			@media #{$bp-large}  { @content; }
 		}
-		$else if $point == smallmax {
-			@media #{$bp-small-max}  { $content; }
+		@else if $point == smallmax {
+			@media #{$bp-small-max}  { @content; }
 		}
-		$else if $point == mediummax {
-			@media #{$bp-medium-max}  { $content; }
+		@else if $point == mediummax {
+			@media #{$bp-medium-max}  { @content; }
 		}
-		$else if $point == largemax {
-			@media #{$bp-large-max}  { $content; }
+		@else if $point == largemax {
+			@media #{$bp-large-max}  { @content; }
 		}
-		$else if $point == tablet {
-			@media #{$bp-tablet}  { $content; }
+		@else if $point == tablet {
+			@media #{$bp-tablet}  { @content; }
 		}
-		$else {
-			@media #{$point} { $content; }
+		@else {
+			@media #{$point} { @content; }
 		}
 	}
 }

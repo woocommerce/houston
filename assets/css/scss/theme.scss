@@ -3,6 +3,7 @@ $MQs: true;
 /*  Compass Mixins  */
 @import "compass";
 
+@import "base/mixins";
 @import "base/variables";
 @import "base/media-queries";
 @import "base/global";

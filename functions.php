@@ -2,6 +2,18 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 /**
+ * Get the theme version.
+ * Return version defined in style.css
+ *
+ * @return string version.
+ * @since 0.1.0
+ */
+function apollo_get_theme_version() {
+	$theme = wp_get_theme( basename( get_bloginfo( 'stylesheet_directory' ) ) );
+	return $theme->version;
+}
+
+/**
  * Add a new sidebar beneath the post box.
  */
 add_action( 'widgets_init', 'houston_register_sidebar' );
@@ -45,13 +57,13 @@ add_filter( 'wp_nav_menu_items', 'houston_new_nav_menu_items', 10, 2 );
  */
 function apollo_enqueue_scripts() {
 	
-	$version = ct_get_theme_version();
+	$version = apollo_get_theme_version();
 	
 	// Styles
-	wp_enqueue_style( 'apollo-styles', get_template_directory_uri() . "/assets/css/theme.css", array(), $version );
+	wp_enqueue_style( 'apollo-styles', get_stylesheet_directory_uri() . "/assets/css/theme.css", array(), $version );
 	
 	// Scripts
-	wp_register_script( 'apollo-scripts', get_template_directory_uri() . "/assets/js/theme.js", array( 'jquery', 'p2' ), $version, true );
+	wp_register_script( 'apollo-scripts', get_stylesheet_directory_uri() . "/assets/js/theme.js", array( 'jquery', 'p2' ), $version, true );
 	
 	// Localize Script / Data
 	$ct_scripts_data_array = array();
