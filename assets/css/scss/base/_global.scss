@@ -1422,6 +1422,7 @@ h2 .controls a#togglecomments:before {
   outline: none;
   border: 1px solid #ababab;
   font-size: 2em;
+  font-weight: 300;
   @include border-top-right-radius(2px);
   @include border-bottom-right-radius(2px);
 }
@@ -1449,11 +1450,14 @@ h2 .controls a#togglecomments:before {
 }
 #sidebar .searchform #s {
   width: 55%;
+  font-size: 12px;
+  padding: 8px 10px;
 }
 #sidebar .searchform #searchsubmit {
   width: 45%;
-  padding-top: .53em;
-  padding-bottom: .53em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 11px;
 }
 #respond {
   padding: 1.618em 1.618em 1.618em 54px;
