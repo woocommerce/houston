@@ -1601,15 +1601,18 @@ h2 .controls a#togglecomments:before {
   padding-left: 1.618em !important;
 }
 #main #postlist .hentry.state-unresolved {
-  box-shadow: #E6000A 5px 0 0 inset;
-  border-left-color: #E6000A !important;
-}
-#main #postlist .hentry.state-resolved {
   box-shadow: $red 5px 0 0 inset;
   border-left-color: $red !important;
 }
-#main #postlist .hentry.state-resolved .actions a.p2-resolve-link {
+#main #postlist .hentry.state-unresolved .actions a.p2-resolve-link {
   background-color: $red !important;
+}
+#main #postlist .hentry.state-resolved {
+  box-shadow: $green 5px 0 0 inset;
+  border-left-color: $green !important;
+}
+#main #postlist .hentry.state-resolved .actions a.p2-resolve-link {
+  background-color: $green !important;
 }
 .p2-resolved-posts-audit-log img {
   width: 16px !important;
