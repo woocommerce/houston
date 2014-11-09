@@ -80,6 +80,15 @@ jQuery(document).ready(function(){
         return false;
     });
 
+    // allow submitting of post box with CMD-RETURN ala github
+     jQuery( document ).on( 'keydown', '#postbox .inputarea textarea, #commentform textarea#comment', function( e ) {
+
+        if ( e.keyCode === 13 && e.metaKey ) {
+            e.preventDefault();
+            jQuery( e.target ).closest( 'form' ).submit();
+        }
+     });
+
 });
 jQuery(window).resize(function(){
 
