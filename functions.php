@@ -80,7 +80,7 @@ add_action( 'wp_enqueue_scripts', 'apollo_enqueue_scripts' );
  */
 add_action( 'wp_enqueue_scripts', 'houston_scripts', 999 );
 function houston_scripts() {
-	wp_enqueue_script( 'woo-p2-script', get_stylesheet_directory_uri() . '/js/script.min.js', array( 'jquery' ), '', true );
+	wp_enqueue_script( 'woo-p2-script', get_stylesheet_directory_uri() . '/js/script.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'fitvids', get_stylesheet_directory_uri() . '/js/fitvids.js', array( 'jquery' ), '', true );
 	wp_dequeue_script( 'iphone' );
 }
