@@ -1020,6 +1020,16 @@ h2 .controls a#togglecomments:before {
 #postlist .commentcontent {
   margin-left: 48px;
 }
+#postlist li.post {
+  h4 {
+    margin-left: 0;
+  }
+}
+#postlist .postcontent {
+  ul { 
+    padding: 10px 5px 10px 5px;
+  }
+}
 #postlist .postcontent {
   padding-bottom: 1.618em;
 }
